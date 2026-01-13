@@ -1,0 +1,6 @@
+[submodule "treven-back"]
+	path = treven-back
+	url = https://github.com/treven-tech/treven-back
+[submodule "treven-back-db"]
+	path = treven-back-db
+	url = https://github.com/treven-tech/treven-back-db

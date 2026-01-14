@@ -64,7 +64,10 @@ src/
 ├── lib.rs           # Library root
 ├── api/             # HTTP handlers
 ├── ws/              # WebSocket handlers
-├── db/              # Database operations
+├── dynamodb/        # DynamoDB operations
+│   ├── client.rs    # DynamoDB client setup
+│   ├── queries.rs   # Query helpers
+│   └── models.rs    # Item serialization
 ├── models/          # Data structures
 ├── services/        # Business logic
 └── utils/           # Helpers
@@ -81,17 +84,46 @@ src/
 // Use thiserror for custom errors
 #[derive(Debug, thiserror::Error)]
 pub enum AppError {
-    #[error("Database error: {0}")]
-    Database(#[from] sqlx::Error),
+    #[error("DynamoDB error: {0}")]
+    DynamoDB(String),
     #[error("Not found: {0}")]
     NotFound(String),
     #[error("Unauthorized")]
     Unauthorized,
+    #[error("Serialization error: {0}")]
+    Serde(#[from] serde_json::Error),
 }
 
 // Use Result everywhere
-pub async fn get_report(id: &str) -> Result<Report, AppError> {
+pub async fn get_report(org_id: &str, report_id: &str) -> Result<Report, AppError> {
     // ...
+}
+```
+
+### DynamoDB Patterns
+```rust
+use aws_sdk_dynamodb::Client;
+use serde::{Deserialize, Serialize};
+
+// Item serialization with serde_dynamo
+#[derive(Serialize, Deserialize)]
+pub struct ReportItem {
+    #[serde(rename = "PK")]
+    pub pk: String,
+    #[serde(rename = "SK")]
+    pub sk: String,
+    pub report_id: String,
+    pub title: String,
+    pub status: String,
+}
+
+// Query pattern
+pub async fn get_reports_by_org(
+    client: &Client,
+    org_id: &str,
+) -> Result<Vec<ReportItem>, AppError> {
+    let pk = format!("ORG#{}", org_id);
+    // Query with PK = org and SK begins_with "REPORT#"
 }
 ```
 

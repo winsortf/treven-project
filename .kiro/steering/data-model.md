@@ -12,7 +12,11 @@ inclusion: always
   - DB partitioning (orgId keys)
   - S3 path prefix (`orgId/...`)
 
-## DynamoDB Tables (Document + Audit)
+## DynamoDB Single-Table Design
+
+All data is stored in a single DynamoDB table using composite primary keys (PK/SK pattern) for efficient querying and multi-tenant isolation.
+
+### Table: treven-main
 
 ### Organizations
 ```json
@@ -120,71 +124,86 @@ inclusion: always
 }
 ```
 
-## RDS PostgreSQL Tables (Relational)
-
-### users
-```sql
-CREATE TABLE users (
-  id UUID PRIMARY KEY,
-  org_id UUID NOT NULL REFERENCES organizations(id),
-  cognito_sub VARCHAR(255) UNIQUE NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  name VARCHAR(255),
-  role VARCHAR(50) NOT NULL, -- admin, analyst, viewer
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
-);
+### Users
+```json
+{
+  "PK": "ORG#<orgId>",
+  "SK": "USER#<userId>",
+  "userId": "string",
+  "cognitoSub": "string",
+  "email": "string",
+  "name": "string",
+  "role": "admin|analyst|viewer",
+  "createdAt": "ISO8601",
+  "updatedAt": "ISO8601"
+}
 ```
 
-### organizations
-```sql
-CREATE TABLE organizations (
-  id UUID PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  type VARCHAR(50), -- fi, ngo, le
-  settings JSONB DEFAULT '{}',
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
+### Partners
+```json
+{
+  "PK": "ORG#<orgId>",
+  "SK": "PARTNER#<partnerId>",
+  "partnerId": "string",
+  "name": "string",
+  "type": "fi|ngo|le",
+  "contactEmail": "string",
+  "settings": "object",
+  "createdAt": "ISO8601"
+}
 ```
 
-### partners
-```sql
-CREATE TABLE partners (
-  id UUID PRIMARY KEY,
-  org_id UUID NOT NULL REFERENCES organizations(id),
-  name VARCHAR(255) NOT NULL,
-  type VARCHAR(50), -- fi, ngo, le
-  contact_email VARCHAR(255),
-  settings JSONB DEFAULT '{}',
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
+### ReportAccess
+```json
+{
+  "PK": "ORG#<orgId>#REPORT#<reportId>",
+  "SK": "ACCESS#<partnerId>",
+  "accessLevel": "view|download",
+  "grantedBy": "string",
+  "grantedAt": "ISO8601"
+}
 ```
 
-### report_access
-```sql
-CREATE TABLE report_access (
-  id UUID PRIMARY KEY,
-  report_id VARCHAR(255) NOT NULL,
-  partner_id UUID REFERENCES partners(id),
-  access_level VARCHAR(50), -- view, download
-  granted_by UUID REFERENCES users(id),
-  granted_at TIMESTAMPTZ DEFAULT NOW()
-);
+### ReportVersions
+```json
+{
+  "PK": "ORG#<orgId>#REPORT#<reportId>",
+  "SK": "VERSION#<version>",
+  "version": "number",
+  "contentHash": "string",
+  "changesSummary": "string",
+  "createdBy": "string",
+  "createdAt": "ISO8601"
+}
 ```
 
-### report_versions
-```sql
-CREATE TABLE report_versions (
-  id UUID PRIMARY KEY,
-  report_id VARCHAR(255) NOT NULL,
-  version INTEGER NOT NULL,
-  content_hash VARCHAR(64),
-  changes_summary TEXT,
-  created_by UUID REFERENCES users(id),
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  UNIQUE(report_id, version)
-);
+### AuditLogs
+```json
+{
+  "PK": "ORG#<orgId>",
+  "SK": "AUDIT#<timestamp>#<eventId>",
+  "eventId": "string",
+  "eventType": "string",
+  "userId": "string",
+  "resourceType": "string",
+  "resourceId": "string",
+  "action": "string",
+  "details": "object",
+  "createdAt": "ISO8601"
+}
 ```
+
+## Global Secondary Indexes (GSIs)
+
+### GSI1: User Lookup by Cognito Sub
+- **PK:** `cognitoSub`
+- **SK:** `orgId`
+- **Use:** Find user by Cognito identity
+
+### GSI2: Reports by Status
+- **PK:** `ORG#<orgId>`
+- **SK:** `status#<updatedAt>`
+- **Use:** List reports filtered by status
 
 ## S3 Structure
 

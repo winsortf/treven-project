@@ -41,15 +41,11 @@ All services must be deployed in London region for data residency.
          ┌─────────────┼─────────────┐
          │             │             │
          ▼             ▼             ▼
-    ┌─────────┐  ┌──────────┐  ┌─────────┐
-    │   S3   │  │ DynamoDB │  │   RDS   │
-    │        │  │          │  │ Postgres│
-    └─────────┘  └──────────┘  └────┬────┘
-                                    │
-                              ┌─────┴─────┐
-                              │   Redis   │
-                              │(ElastiCache)│
-                              └───────────┘
+    ┌─────────┐  ┌──────────┐  ┌───────────┐
+    │   S3    │  │ DynamoDB │  │   Redis   │
+    │         │  │ (Primary │  │(ElastiCache)│
+    └─────────┘  │    DB)   │  └───────────┘
+                 └──────────┘
 
               ┌──────────────────┐
               │  Amazon Bedrock  │
@@ -98,15 +94,12 @@ All services must be deployed in London region for data residency.
 - Versioning enabled
 
 ### DynamoDB
-- On-demand capacity
-- Point-in-time recovery
+- On-demand capacity (pay-per-request)
+- Single-table design with composite keys
+- Point-in-time recovery enabled
 - Encryption at rest
-
-### RDS PostgreSQL
-- db.t3.medium (start)
-- Multi-AZ for production
-- Automated backups
-- Encryption at rest
+- Global Secondary Indexes for access patterns
+- TTL for automatic data expiration (audit logs)
 
 ### ElastiCache Redis
 - cache.t3.micro (start)
@@ -136,10 +129,9 @@ All services must be deployed in London region for data residency.
 | API Gateway | $10-30 |
 | ECS/Fargate | $50-150 |
 | S3 | $5-20 |
-| DynamoDB | $10-50 |
-| RDS | $50-100 |
+| DynamoDB | $20-80 |
 | ElastiCache | $15-30 |
 | Bedrock | $100-500 (usage) |
-| **Total** | **$255-950/month** |
+| **Total** | **$215-880/month** |
 
 *Varies significantly based on usage and report generation volume*

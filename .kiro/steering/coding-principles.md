@@ -113,6 +113,50 @@ inclusion: always
 
 ### Dependency Flow
 
+## DynamoDB Best Practices
+
+### Single-Table Design
+
+- Use ONE table for all entities
+- Composite keys (PK/SK) enable efficient queries
+- Design access patterns FIRST, then model data
+- Denormalize data to avoid joins
+
+### Key Design Principles
+
+- **PK (Partition Key)**: Always include `orgId` for multi-tenant isolation
+- **SK (Sort Key)**: Use hierarchical prefixes (e.g., `REPORT#`, `USER#`)
+- **GSIs**: Create for alternate access patterns only when needed
+- **Sparse Indexes**: Only items with the GSI attribute are indexed
+
+### Query Patterns
+
+- Prefer `Query` over `Scan` (always)
+- Use `begins_with` on SK for hierarchical queries
+- Use `between` for time-range queries
+- Paginate large result sets with `LastEvaluatedKey`
+
+### Data Modeling Rules
+
+- Store related data together (single item when possible)
+- Use ISO8601 for timestamps (enables sorting)
+- Include `entityType` attribute for filtering
+- Version items with `version` attribute for optimistic locking
+
+### Performance
+
+- Keep items small (< 400KB limit)
+- Use projection expressions to fetch only needed attributes
+- Batch operations for bulk reads/writes (max 25 items)
+- Use TTL for automatic data expiration
+
+### Multi-Tenant Isolation
+
+- ALWAYS prefix PK with `ORG#<orgId>`
+- Validate `orgId` from JWT before every operation
+- Never allow cross-org queries
+- Audit all data access
+
 ## Responsive Design
 
 ### Web (Progressive Web App)

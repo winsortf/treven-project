@@ -28,10 +28,10 @@ inclusion: always
 ## Database Layer: treven-back-db/
 
 - **Language:** Rust
-- **Primary DB:** PostgreSQL (AWS RDS)
+- **Primary DB:** Amazon DynamoDB (single-table design)
 - **Cache:** Redis
-- **ORM:** SQLx or Diesel
-- **Migrations:** SQL-based migrations
+- **SDK:** AWS SDK for Rust (aws-sdk-dynamodb)
+- **Design:** Single-table with composite keys (PK/SK pattern)
 
 ## AI Agents: treven-ai/
 
@@ -52,8 +52,7 @@ inclusion: always
 | ECS/Fargate | Container runtime |
 | ECR | Container registry |
 | S3 | Files, PDFs, reports, evidence |
-| DynamoDB | Document store (chats, runs, audit) |
-| RDS PostgreSQL | Relational data (users, orgs, permissions) |
+| DynamoDB | Primary database (all data) |
 | ElastiCache Redis | Caching |
 | Bedrock | LLM inference |
 | Bedrock AgentCore | Agent runtime |

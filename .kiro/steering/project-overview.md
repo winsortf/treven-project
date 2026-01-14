@@ -40,5 +40,5 @@ treven-project/
 1. **Human-in-the-loop:** No report export without explicit analyst approval
 2. **Source traceability:** Every claim must have a citation (URL or dataset reference)
 3. **PII enforcement:** Detect and redact PII before storing/showing/exporting
-4. **Security:** Deploy in AWS London (eu-west-2), encrypt at rest + in transit
+4. **Security:** Deploy in AWS Oregon (us-west-2), encrypt at rest + in transit
 5. **Multi-tenant isolation:** Enforce org isolation at API, DB, and S3 layers

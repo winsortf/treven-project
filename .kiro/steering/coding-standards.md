@@ -101,9 +101,27 @@ pub async fn get_report(org_id: &str, report_id: &str) -> Result<Report, AppErro
 ```
 
 ### DynamoDB Patterns
+
+**Table:** `lon12-table`
+**Region:** `us-west-2`
+**Docs:** https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_dynamodb_code_examples.html
+
 ```rust
-use aws_sdk_dynamodb::Client;
+use aws_sdk_dynamodb::{Client, Config};
+use aws_sdk_dynamodb::types::AttributeValue;
 use serde::{Deserialize, Serialize};
+use serde_dynamo::{from_items, to_item};
+
+const TABLE_NAME: &str = "lon12-table";
+
+// Client setup
+pub async fn create_client() -> Client {
+    let config = aws_config::defaults(aws_config::BehaviorVersion::latest())
+        .region("us-west-2")
+        .load()
+        .await;
+    Client::new(&config)
+}
 
 // Item serialization with serde_dynamo
 #[derive(Serialize, Deserialize)]
@@ -117,13 +135,55 @@ pub struct ReportItem {
     pub status: String,
 }
 
-// Query pattern
-pub async fn get_reports_by_org(
-    client: &Client,
-    org_id: &str,
-) -> Result<Vec<ReportItem>, AppError> {
+// Put item
+pub async fn put_report(client: &Client, item: &ReportItem) -> Result<(), AppError> {
+    let item = to_item(item)?;
+    client
+        .put_item()
+        .table_name(TABLE_NAME)
+        .set_item(Some(item))
+        .send()
+        .await
+        .map_err(|e| AppError::DynamoDB(e.to_string()))?;
+    Ok(())
+}
+
+// Get item
+pub async fn get_report(client: &Client, org_id: &str, report_id: &str) -> Result<ReportItem, AppError> {
     let pk = format!("ORG#{}", org_id);
-    // Query with PK = org and SK begins_with "REPORT#"
+    let sk = format!("REPORT#{}", report_id);
+
+    let result = client
+        .get_item()
+        .table_name(TABLE_NAME)
+        .key("PK", AttributeValue::S(pk))
+        .key("SK", AttributeValue::S(sk))
+        .send()
+        .await
+        .map_err(|e| AppError::DynamoDB(e.to_string()))?;
+
+    match result.item {
+        Some(item) => serde_dynamo::from_item(item).map_err(|e| AppError::Serde(e.into())),
+        None => Err(AppError::NotFound(report_id.to_string())),
+    }
+}
+
+// Query items
+pub async fn get_reports_by_org(client: &Client, org_id: &str) -> Result<Vec<ReportItem>, AppError> {
+    let pk = format!("ORG#{}", org_id);
+
+    let result = client
+        .query()
+        .table_name(TABLE_NAME)
+        .key_condition_expression("PK = :pk AND begins_with(SK, :prefix)")
+        .expression_attribute_values(":pk", AttributeValue::S(pk))
+        .expression_attribute_values(":prefix", AttributeValue::S("REPORT#".to_string()))
+        .send()
+        .await
+        .map_err(|e| AppError::DynamoDB(e.to_string()))?;
+
+    from_items(result.items.unwrap_or_default())
+        .map_err(|e| AppError::Serde(e.into()))
 }
 ```
 

@@ -19,7 +19,7 @@ on:
     branches: [main]
 
 env:
-  AWS_REGION: eu-west-2
+  AWS_REGION: us-west-2
 
 jobs:
   # Frontend
@@ -148,7 +148,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-2
+          aws-region: us-west-2
       - run: terraform init
       - run: terraform plan -out=tfplan
       - uses: actions/upload-artifact@v4
@@ -172,7 +172,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-2
+          aws-region: us-west-2
       - run: terraform init
         working-directory: infra
       - run: terraform apply -auto-approve tfplan

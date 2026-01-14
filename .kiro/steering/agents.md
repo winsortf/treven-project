@@ -107,7 +107,7 @@ PRIMARY_MODEL = "anthropic.claude-opus-4-5"
 SECONDARY_MODEL = "google.gemini-latest"
 
 # Bedrock region
-AWS_REGION = "eu-west-2"  # London
+AWS_REGION = "us-west-2"  # London
 
 # Agent runtime
 RUNTIME = "bedrock-agentcore"

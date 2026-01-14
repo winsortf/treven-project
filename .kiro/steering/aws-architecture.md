@@ -6,9 +6,9 @@ inclusion: always
 
 ## Region Requirement
 
-**Primary:** eu-west-2 (London)
+**Primary:** us-west-2 (Oregon)
 
-All services must be deployed in London region for data residency.
+**DynamoDB Table:** lon12-table
 
 ## Architecture Diagram
 

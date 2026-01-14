@@ -55,7 +55,7 @@ services:
     environment:
       - DYNAMODB_ENDPOINT=http://localstack:4566
       - REDIS_URL=redis://redis:6379
-      - AWS_REGION=eu-west-2
+      - AWS_REGION=us-west-2
 
   ws:
     build: ./treven-back
@@ -74,7 +74,7 @@ services:
       - "4566:4566"
     environment:
       - SERVICES=s3,dynamodb
-      - DEFAULT_REGION=eu-west-2
+      - DEFAULT_REGION=us-west-2
     volumes:
       - localstack_data:/var/lib/localstack
 
@@ -95,16 +95,16 @@ NEXT_PUBLIC_COGNITO_CLIENT_ID=local
 ### treven-back/.env
 ```
 DYNAMODB_ENDPOINT=http://localhost:4566
-DYNAMODB_TABLE=treven-main
+DYNAMODB_TABLE=lon12-table
 REDIS_URL=redis://localhost:6379
-AWS_REGION=eu-west-2
+AWS_REGION=us-west-2
 S3_BUCKET=treven-data-local
 S3_ENDPOINT=http://localhost:4566
 ```
 
 ### treven-ai/.env
 ```
-AWS_REGION=eu-west-2
+AWS_REGION=us-west-2
 BEDROCK_MODEL_ID=anthropic.claude-opus-4-5
 ```
 
@@ -141,7 +141,7 @@ aws --endpoint-url=http://localhost:4566 s3 mb s3://treven-data-local
 
 # Create main DynamoDB table
 aws --endpoint-url=http://localhost:4566 dynamodb create-table \
-  --table-name treven-main \
+  --table-name lon12-table \
   --attribute-definitions \
     AttributeName=PK,AttributeType=S \
     AttributeName=SK,AttributeType=S \
@@ -166,5 +166,5 @@ aws --endpoint-url=http://localhost:4566 dynamodb create-table \
   --billing-mode PAY_PER_REQUEST
 
 # Verify table created
-aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name treven-main
+aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name lon12-table
 ```

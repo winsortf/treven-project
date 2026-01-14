@@ -16,7 +16,9 @@ inclusion: always
 
 All data is stored in a single DynamoDB table using composite primary keys (PK/SK pattern) for efficient querying and multi-tenant isolation.
 
-### Table: treven-main
+### Table: lon12-table
+
+**Region:** us-west-2
 
 ### Organizations
 ```json

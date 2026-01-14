@@ -45,7 +45,7 @@ For you:
 - `USER_ID` = `JO`
 - Example timestamp: `JO202601071403`
 
-> Note: `YYYYMMDDHHMM` is 24-hour time and should be based on the moment you commit.
+> **IMPORTANT:** `YYYYMMDDHHMM` MUST be the **actual current time** when you commit. Always run `date +"%Y%m%d%H%M"` to get the correct timestamp. Never use a hardcoded or estimated time.
 
 ---
 

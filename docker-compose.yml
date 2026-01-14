@@ -30,13 +30,33 @@ services:
       - AWS_REGION=us-west-2
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
-      - DYNAMODB_TABLE=lon12-table
-      - DYNAMODB_ENDPOINT=http://localstack:4566
       - REDIS_URL=redis://redis:6379
       - S3_BUCKET=treven-data-local
       - S3_ENDPOINT=http://localstack:4566
+      - DB_SERVICE_URL=http://db:3001
     depends_on:
       - redis
+      - localstack
+      - db
+    networks:
+      - treven-network
+
+  # Database Service - Rust (DynamoDB HTTP API)
+  db:
+    build:
+      context: ./treven-back-db
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - RUST_LOG=info
+      - DB_SERVICE_PORT=3001
+      - AWS_REGION=us-west-2
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - DYNAMODB_TABLE=lon12-table
+      - DYNAMODB_ENDPOINT=http://localstack:4566
+    depends_on:
       - localstack
     networks:
       - treven-network

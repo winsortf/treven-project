@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Frontend - Next.js
   web:
@@ -17,6 +15,8 @@ services:
       - ./treven-web:/app
       - /app/node_modules
       - /app/.next
+    networks:
+      - treven-network
 
   # Backend API - Rust
   api:
@@ -27,63 +27,69 @@ services:
       - "8080:8080"
     environment:
       - RUST_LOG=info
-      - DATABASE_URL=postgres://postgres:postgres@db:5432/treven
+      - AWS_REGION=us-west-2
+      - DYNAMODB_TABLE=lon12-table
+      - DYNAMODB_ENDPOINT=http://localstack:4566
       - REDIS_URL=redis://redis:6379
-      - AWS_REGION=eu-west-2
       - S3_BUCKET=treven-data-local
       - S3_ENDPOINT=http://localstack:4566
-      - DYNAMODB_ENDPOINT=http://localstack:4566
     depends_on:
-      - db
       - redis
       - localstack
+    networks:
+      - treven-network
 
   # AI Agents - Python
   agents:
     build:
       context: ./treven-ai
       dockerfile: Dockerfile
-    environment:
-      - AWS_REGION=eu-west-2
-      - BEDROCK_MODEL_ID=anthropic.claude-sonnet-4-5-20250929-v1:0
-    volumes:
-      - ./treven-ai:/app
-
-  # PostgreSQL Database
-  db:
-    image: postgres:16-alpine
     ports:
-      - "5432:5432"
+      - "8081:8081"
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=treven
+      - PYTHONUNBUFFERED=1
+      - AWS_REGION=us-west-2
+      - BEDROCK_MODEL_ID=anthropic.claude-sonnet-4-5-20250929-v1:0
+      - DYNAMODB_TABLE=lon12-table
+      - DYNAMODB_ENDPOINT=http://localstack:4566
+      - S3_BUCKET=treven-data-local
+      - S3_ENDPOINT=http://localstack:4566
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./treven-back-db/migrations:/docker-entrypoint-initdb.d
+      - ./treven-ai/src:/app/src:ro
+    depends_on:
+      - localstack
+    networks:
+      - treven-network
 
   # Redis Cache
   redis:
-    image: redis:7-alpine
+    image: redis:8-alpine
     ports:
       - "6379:6379"
     volumes:
       - redis_data:/data
+    networks:
+      - treven-network
 
-  # LocalStack for AWS services emulation
+  # LocalStack for AWS services emulation (DynamoDB, S3)
   localstack:
     image: localstack/localstack:latest
     ports:
       - "4566:4566"
     environment:
       - SERVICES=s3,dynamodb
-      - DEFAULT_REGION=eu-west-2
+      - DEFAULT_REGION=us-west-2
       - DATA_DIR=/var/lib/localstack/data
     volumes:
       - localstack_data:/var/lib/localstack
-      - ./scripts/localstack-init.sh:/etc/localstack/init/ready.d/init.sh
+      - ./scripts/localstack-init.sh:/etc/localstack/init/ready.d/init.sh:ro
+    networks:
+      - treven-network
+
+networks:
+  treven-network:
+    driver: bridge
 
 volumes:
-  postgres_data:
   redis_data:
   localstack_data:

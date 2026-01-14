@@ -4,27 +4,18 @@
 echo "Initializing LocalStack resources..."
 
 # Create S3 bucket
-awslocal s3 mb s3://treven-data-local
+awslocal s3 mb s3://treven-data-local --region us-west-2
 
-# Create DynamoDB tables
+# Create DynamoDB table (single-table design)
 awslocal dynamodb create-table \
-    --table-name treven-main \
+    --table-name lon12-table \
     --attribute-definitions \
         AttributeName=PK,AttributeType=S \
         AttributeName=SK,AttributeType=S \
     --key-schema \
         AttributeName=PK,KeyType=HASH \
         AttributeName=SK,KeyType=RANGE \
-    --billing-mode PAY_PER_REQUEST
-
-awslocal dynamodb create-table \
-    --table-name treven-audit \
-    --attribute-definitions \
-        AttributeName=PK,AttributeType=S \
-        AttributeName=SK,AttributeType=S \
-    --key-schema \
-        AttributeName=PK,KeyType=HASH \
-        AttributeName=SK,KeyType=RANGE \
-    --billing-mode PAY_PER_REQUEST
+    --billing-mode PAY_PER_REQUEST \
+    --region us-west-2
 
 echo "LocalStack initialization complete!"

@@ -7,3 +7,6 @@
 [submodule "treven-web"]
 	path = treven-web
 	url = https://github.com/treven-tech/treven-web
+[submodule "treven-ai"]
+	path = treven-ai
+	url = https://github.com/treven-tech/treven-ai

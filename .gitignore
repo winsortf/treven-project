@@ -6,6 +6,10 @@
 
 /dataset_for_hackathon
 dataset_for_hackathon/*
+
+/samples
+samples/*
+
 /.DS_Store
 .DS_Store/*
 

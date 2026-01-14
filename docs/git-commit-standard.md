@@ -101,3 +101,25 @@ Test ( Shapes ) Create card styles ( AMT-2 )
 - `style`: Styling-only changes (formatting/UI styling)
 - `test`: Adding or updating tests
 - `layout`: Adding new components or layout/styling work
+
+---
+
+## Prohibited in commits
+
+### No AI Co-Author Attribution
+- **NEVER** add `Co-Authored-By` lines for AI assistants (Claude, GPT, Copilot, etc.)
+- **NEVER** add any AI attribution, credits, or mentions in commit messages
+- Commits must only have the human developer as the author
+- The git author should be the person who requested/approved the changes
+
+#### Bad (DO NOT DO THIS)
+```
+Feat ( API ) Add new endpoint ( JO202601142030 )
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+#### Good
+```
+Feat ( API ) Add new endpoint ( JO202601142030 )
+```

@@ -159,13 +159,35 @@ inclusion: always
 
 ## Responsive Design
 
+### Mobile-First Approach (REQUIRED)
+
+All CSS must be written mobile-first:
+1. Base styles for mobile (no media query)
+2. `@media (min-width: 768px)` for tablet
+3. `@media (min-width: 1024px)` for desktop
+
+```css
+/* Mobile first example */
+.component {
+  padding: var(--space-2);  /* Mobile default */
+}
+
+@media (min-width: 768px) {
+  .component {
+    padding: var(--space-4);  /* Tablet+ */
+  }
+}
+```
+
 ### Web (Progressive Web App)
 
-- Mobile-first approach
+- Mobile-first approach (REQUIRED)
 - Responsive layouts using CSS Grid/Flexbox
-- Touch-friendly interactions
-- Offline support
-- App-like experience on mobile devices
+- Touch-friendly tap targets (min 44px)
+- Offline support via service worker
+- App-like experience with PWA manifest
+- Safe area insets for notched devices
+- Bottom navigation on mobile, sidebar on desktop
 
 ### iOS
 

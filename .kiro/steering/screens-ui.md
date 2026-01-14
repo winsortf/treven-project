@@ -151,8 +151,29 @@ Draft → In Review → Approved → Exported
 └─────────────────────────────────────────┘
 ```
 
-## Responsive Behavior
+## Responsive Behavior (Mobile-First)
 
-- Desktop-first design
-- Tablet: Collapsible sidebars
-- Mobile: Bottom nav, stacked layouts
+### Mobile (< 768px)
+- Bottom navigation bar (fixed)
+- Full-width content
+- Stacked layouts
+- Touch-friendly tap targets (min 44px)
+- Safe area insets for notched devices
+
+### Tablet (768px - 1024px)
+- Collapsible sidebar
+- Responsive grid layouts
+- Touch and pointer support
+
+### Desktop (> 1024px)
+- Persistent sidebar (collapsible)
+- Multi-column layouts
+- Hover interactions
+
+## PWA Support
+
+- Installable as app on mobile
+- Offline-capable (service worker)
+- App shortcuts for quick actions
+- Theme color: #FCCA01 (Yellow)
+- Background color: #262524 (Ink)

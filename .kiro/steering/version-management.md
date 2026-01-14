@@ -2,45 +2,132 @@
 inclusion: always
 ---
 
-# Version Management
+# Version Management Rules
 
-## Semantic Versioning (SemVer)
+## MANDATORY: Always Use Latest Stable/LTS Versions
 
-All projects follow [Semantic Versioning 2.0.0](https://semver.org/):
+**This rule applies to ALL dependency management across the entire project.**
 
-```
-MAJOR.MINOR.PATCH
-```
+### CRITICAL: Version Verification Process
 
-- **MAJOR**: Breaking changes (incompatible API changes)
-- **MINOR**: New features (backwards compatible)
-- **PATCH**: Bug fixes (backwards compatible)
+**BEFORE adding ANY dependency, you MUST:**
 
-## Current Versions
+1. **FETCH the official source DIRECTLY** - Do NOT rely on web search results which may be cached/outdated
+2. **Use WebFetch tool** to check the OFFICIAL package registry:
+   - **Rust crates**: `https://crates.io/api/v1/crates/<package-name>`
+   - **Python**: `https://pypi.org/project/<package-name>/`
+   - **npm**: `https://www.npmjs.com/package/<package-name>`
+3. **Extract the EXACT current version** from the official page
+4. **Record the verification date** (YYYY-MM-DD format)
+5. **NEVER trust cached search results** - always verify directly
 
-| Project | Version | Runtime |
+### Before Adding Any Dependency
+
+1. **ALWAYS fetch from official registry** at the EXACT time of the request
+2. **NEVER use outdated versions** - verify against official source
+3. **NEVER downgrade** existing dependency versions unless critical compatibility issue
+4. **Document the version** with the EXACT date it was verified
+
+---
+
+## Treven Project Versions (Verified: 2026-01-14)
+
+### Rust (treven-back, treven-back-db)
+
+**Rust Edition**: 2024 (requires Rust 1.85+)
+
+| Crate | Version | Purpose |
+|-------|---------|---------|
+| tokio | 1.49.0 | Async runtime |
+| axum | 0.8.8 | Web framework |
+| tower | 0.5.3 | Service abstractions |
+| tower-http | 0.6.8 | HTTP middleware |
+| serde | 1.0.228 | Serialization |
+| serde_json | 1.0.149 | JSON |
+| aws-config | 1.8.12 | AWS configuration |
+| aws-sdk-dynamodb | 1.101.0 | DynamoDB client |
+| aws-sdk-s3 | 1.119.0 | S3 client |
+| aws-sdk-bedrockruntime | 1.120.0 | Bedrock client |
+| serde_dynamo | 4.3.0 | DynamoDB serialization |
+| redis | 1.0.2 | Redis client |
+| jsonwebtoken | 10.2.0 | JWT handling |
+| uuid | 1.19.0 | UUIDs |
+| chrono | 0.4.42 | Date/time |
+| thiserror | 2.0.17 | Error handling |
+| anyhow | 1.0.100 | Error handling |
+| tracing | 0.1.44 | Logging |
+| tracing-subscriber | 0.3.22 | Log subscriber |
+| dotenvy | 0.15.7 | Environment |
+| futures | 0.3.31 | Futures utilities |
+| tokio-tungstenite | 0.28.0 | WebSocket |
+
+### Frontend (treven-web)
+
+| Package | Version | Purpose |
 |---------|---------|---------|
-| treven-web | 0.1.0 | Node.js 22.x, Next.js 16.x |
-| treven-back | 0.1.0 | Rust 1.75+ |
-| treven-back-db | 0.1.0 | Rust 1.75+ |
-| treven-ai | 0.1.0 | Python 3.11+ |
+| next | 16.1.1 | React framework |
+| react | 19.2.3 | UI library |
+| react-dom | 19.2.3 | React DOM |
+| typescript | 5.9.3 | Type safety |
+| @emotion/react | 11.14.0 | CSS-in-JS |
+| @emotion/styled | 11.14.1 | Styled components |
+| @mui/material | 7.3.7 | Material UI |
+| @mui/icons-material | 7.3.7 | Material Icons |
+| @types/node | 25.0.8 | Node types |
+| @types/react | 19.2.8 | React types |
+| @types/react-dom | 19.2.3 | ReactDOM types |
+| eslint | 9.39.2 | Linting |
+| eslint-config-next | 16.1.1 | Next.js ESLint |
 
-## Dependency Update Policy
+### Python (treven-ai)
 
-### Critical Updates (Immediate)
-- Security vulnerabilities (CVE)
-- Breaking changes in AWS services
-- Runtime deprecations
+**Runtime**: Python 3.12+
+**Package Manager**: uv
+**Primary AI Framework**: Strands Agents (AWS Bedrock)
 
-### Regular Updates (Weekly Review)
-- Minor version bumps
-- Patch releases
-- Dev dependency updates
+| Package | Version | Purpose |
+|---------|---------|---------|
+| strands-agents | 1.22.0 | Agent Development Kit |
+| boto3 | 1.42.27 | AWS SDK |
+| httpx | 0.28.1 | Async HTTP client |
+| beautifulsoup4 | 4.14.3 | HTML parsing |
+| lxml | 6.0.2 | XML/HTML processing |
+| pydantic | 2.12.5 | Data validation |
+| PyPDF2 | 3.0.1 | PDF processing |
+| pytest | 9.0.2 | Testing |
+| ruff | 0.14.11 | Linting |
+| pytest-asyncio | 1.3.0 | Async testing |
 
-### Major Updates (Planned)
-- Major version bumps require testing
-- Breaking changes need migration plan
-- Document in CHANGELOG
+### Docker Images
+
+| Image | Tag | Purpose |
+|-------|-----|---------|
+| rust | 1-slim-bookworm | Rust build |
+| debian | bookworm-slim | Runtime |
+| python | 3.12-slim-bookworm | Python runtime |
+| node | 22-alpine | Node.js build |
+
+---
+
+## UV Commands Reference (treven-ai)
+
+```bash
+uv sync              # Install dependencies from lockfile
+uv add <pkg>         # Add dependency
+uv add --dev <pkg>   # Add dev dependency
+uv run <cmd>         # Run command in venv
+uv lock --upgrade    # Update all dependencies
+```
+
+## Version Documentation Format
+
+When adding dependencies, document:
+
+```
+# Added: <package-name> v<version>
+# Verified: <YYYY-MM-DD>
+# Source: <crates.io/pypi/npm>
+```
 
 ## Lock File Management
 
@@ -54,82 +141,11 @@ MAJOR.MINOR.PATCH
 - **Cargo.lock**: MUST be committed
 - Use `cargo update` to update dependencies
 - Run `cargo audit` for security vulnerabilities
-- Use exact versions for AWS SDK dependencies
 
 ### Python (treven-ai)
 - **uv.lock**: MUST be committed (using uv package manager)
 - Use `uv sync` to install dependencies
 - Pin all production dependencies
-- Use `uv pip compile` for reproducible builds
-
-## Version Pinning Rules
-
-### Production Dependencies
-```toml
-# Rust - Use major version with caret
-aws-sdk-dynamodb = "1"
-serde = { version = "1", features = ["derive"] }
-
-# Or exact version for critical deps
-tokio = "=1.35.0"
-```
-
-```json
-// JavaScript - Use exact versions
-"next": "16.1.1",
-"react": "19.2.3"
-```
-
-```toml
-# Python - Use compatible release
-dependencies = [
-    "strands-agents>=0.1.0,<1.0.0",
-    "boto3>=1.35.0,<2.0.0"
-]
-```
-
-### Dev Dependencies
-- Can use ranges (^, ~, >=)
-- Update frequently
-- Less strict pinning allowed
-
-## AWS SDK Versioning
-
-All AWS SDK dependencies should use the same major version:
-
-```toml
-# Rust - All AWS SDK v1
-aws-config = "1"
-aws-sdk-dynamodb = "1"
-aws-sdk-s3 = "1"
-aws-sdk-bedrockruntime = "1"
-```
-
-```python
-# Python - All boto3 1.x
-boto3 = "^1.35"
-```
-
-## Pre-release Versions
-
-- Use `-alpha`, `-beta`, `-rc` suffixes
-- Never deploy pre-release to production
-- Document known issues
-
-```
-0.2.0-alpha.1
-0.2.0-beta.1
-0.2.0-rc.1
-0.2.0
-```
-
-## Version Bump Process
-
-1. Update version in package file (package.json, Cargo.toml, pyproject.toml)
-2. Update CHANGELOG.md
-3. Commit with message: `Release ( {Project} ) v{VERSION} ( {ID} )`
-4. Tag the release: `git tag v{VERSION}`
-5. Push with tags: `git push --tags`
 
 ## Dependency Audit Commands
 
@@ -152,16 +168,6 @@ pip-audit       # requires pip-audit
 | Component | Node.js | Rust | Python | AWS SDK |
 |-----------|---------|------|--------|---------|
 | treven-web | 22.x | - | - | - |
-| treven-back | - | 1.75+ | - | 1.x |
-| treven-back-db | - | 1.75+ | - | 1.x |
-| treven-ai | - | - | 3.11+ | boto3 1.x |
-
-## Breaking Change Policy
-
-When introducing breaking changes:
-
-1. Increment MAJOR version
-2. Document migration steps
-3. Deprecate old APIs first (when possible)
-4. Provide migration tools/scripts
-5. Update all consuming projects
+| treven-back | - | 1.85+ | - | 1.x |
+| treven-back-db | - | 1.85+ | - | 1.x |
+| treven-ai | - | - | 3.12+ | boto3 1.x |

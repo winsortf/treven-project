@@ -28,6 +28,8 @@ services:
     environment:
       - RUST_LOG=info
       - AWS_REGION=us-west-2
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
       - DYNAMODB_TABLE=lon12-table
       - DYNAMODB_ENDPOINT=http://localstack:4566
       - REDIS_URL=redis://redis:6379
@@ -49,6 +51,8 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - AWS_REGION=us-west-2
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
       - BEDROCK_MODEL_ID=anthropic.claude-sonnet-4-5-20250929-v1:0
       - DYNAMODB_TABLE=lon12-table
       - DYNAMODB_ENDPOINT=http://localstack:4566

@@ -4,9 +4,43 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ---
 
-## ⛔ CRITICAL RULE: NO AI ATTRIBUTION IN COMMITS
+# ⛔⛔⛔ MANDATORY PRE-COMMIT CHECKLIST ⛔⛔⛔
+
+## BEFORE EVERY SINGLE GIT COMMIT, YOU MUST:
+
+```
+[ ] 1. Commit message has NO "Co-Authored-By:" line
+[ ] 2. Commit message has NO AI attribution whatsoever
+[ ] 3. Commit message is ONLY: Type ( Scope ) Description
+[ ] 4. Using simple -m flag, NOT heredoc
+```
+
+## CORRECT COMMIT COMMAND FORMAT:
+```bash
+git commit -m "Feat ( Scope ) Description"
+```
+
+## FORBIDDEN - NEVER USE:
+```bash
+# NEVER use heredoc with Co-Authored-By
+git commit -m "$(cat <<'EOF'
+Message
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+EOF
+)"
+```
+
+---
+
+## ⛔ STRICT RULE: NO AI ATTRIBUTION IN COMMITS
 
 **THIS IS MANDATORY - VIOLATION IS NOT ACCEPTABLE**
+
+**STOP AND VERIFY BEFORE EVERY COMMIT:**
+- Is there a Co-Authored-By line? → REMOVE IT
+- Is there any AI mention? → REMOVE IT
+- Is the commit clean? → PROCEED
 
 When creating git commits, Claude Code must:
 

@@ -3,7 +3,8 @@
 # Wait for LocalStack to be ready
 echo "Initializing LocalStack resources..."
 
-# Create S3 bucket
+# Create S3 buckets
+awslocal s3 mb s3://lon12-bucket --region us-west-2
 awslocal s3 mb s3://treven-data-local --region us-west-2
 
 # Create DynamoDB table (single-table design)

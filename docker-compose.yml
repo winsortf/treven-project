@@ -1,9 +1,10 @@
 services:
-  # Frontend - Next.js
+  # Frontend - Next.js (dev mode)
   web:
     build:
       context: ./treven-web
       dockerfile: Dockerfile
+      target: dev
     ports:
       - "3000:3000"
     environment:
@@ -12,9 +13,8 @@ services:
     depends_on:
       - api
     volumes:
-      - ./treven-web:/app
-      - /app/node_modules
-      - /app/.next
+      - ./treven-web/src:/app/src:ro
+      - ./treven-web/public:/app/public:ro
     networks:
       - treven-network
 

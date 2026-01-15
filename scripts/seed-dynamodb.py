@@ -335,6 +335,52 @@ def seed_india_labour_articles(client, limit: int = 50):
     print(f"  Created {count} India labour articles")
 
 
+def seed_india_se_articles(client, limit: int = 50):
+    """Seed India sexual exploitation articles."""
+    print("Seeding India SE articles...")
+
+    dataset_file = DATASET_DIR / "tah-se-india-six-months.json"
+    if not dataset_file.exists():
+        print(f"  Warning: Dataset file not found: {dataset_file}")
+        return
+
+    with open(dataset_file, "r") as f:
+        articles = json.load(f)
+
+    count = 0
+    for article in articles[:limit]:
+        try:
+            doc_id = article.get("_id", {}).get("$oid", f"india-se-{count}")
+
+            item = {
+                "PK": "TAH#ASIA_PACIFIC",
+                "SK": f"ARTICLE#{doc_id}",
+                "entityType": "TahArticle",
+                "docId": doc_id,
+                "url": article.get("url"),
+                "title": article.get("title", "Untitled"),
+                "article": article.get("article", "")[:5000],
+                "summary": article.get("summary", "")[:2000] if article.get("summary") else None,
+                "region": "Asia-Pacific",
+                "sourceType": "NEWS",
+                "trfkType": json.dumps(article.get("trfk_type")) if article.get("trfk_type") else None,
+                "trfkSubtype": json.dumps(article.get("trfk_subtype")) if article.get("trfk_subtype") else None,
+                "recruitment": json.dumps(article.get("recruitment")) if article.get("recruitment") else None,
+                "coercion": json.dumps(article.get("coercion")) if article.get("coercion") else None,
+                "crawlDate": article.get("crawl_date"),
+                "publishDate": article.get("publish_date"),
+            }
+
+            put_item(client, item)
+            count += 1
+
+        except Exception as e:
+            print(f"  Error processing article: {e}")
+            continue
+
+    print(f"  Created {count} India SE articles")
+
+
 def main():
     """Main entry point."""
     print(f"Seeding DynamoDB table: {TABLE_NAME}")
@@ -350,10 +396,12 @@ def main():
     seed_trends(client)
     seed_reports(client)
     seed_tah_articles(client, limit=100)
-    seed_india_labour_articles(client, limit=50)
+    seed_india_labour_articles(client, limit=100)
+    seed_india_se_articles(client, limit=100)
 
     print()
     print("Seeding complete!")
+    print(f"  Total: Partners, Trends, Reports, and ~300 TAH articles loaded")
 
 
 if __name__ == "__main__":

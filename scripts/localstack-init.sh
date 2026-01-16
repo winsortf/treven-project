@@ -25,25 +25,100 @@ sleep 2
 
 echo "LocalStack table created!"
 
-# Seed initial data
-echo "Seeding initial data..."
+# Seed initial data from JSON files using Python
+echo "Seeding initial data from JSON files..."
 
-# Partners
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-001"},"entityType":{"S":"Partner"},"id":{"S":"partner-001"},"name":{"S":"Barclays Bank"},"type":{"S":"fi"},"reportsShared":{"N":"12"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-10T10:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-002"},"entityType":{"S":"Partner"},"id":{"S":"partner-002"},"name":{"S":"HSBC"},"type":{"S":"fi"},"reportsShared":{"N":"8"},"accessLevel":{"S":"view"},"createdAt":{"S":"2026-01-08T09:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-003"},"entityType":{"S":"Partner"},"id":{"S":"partner-003"},"name":{"S":"Anti-Slavery International"},"type":{"S":"ngo"},"reportsShared":{"N":"15"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-05T11:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-004"},"entityType":{"S":"Partner"},"id":{"S":"partner-004"},"name":{"S":"Metropolitan Police"},"type":{"S":"le"},"reportsShared":{"N":"6"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-12T14:30:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-005"},"entityType":{"S":"Partner"},"id":{"S":"partner-005"},"name":{"S":"Europol"},"type":{"S":"le"},"reportsShared":{"N":"4"},"accessLevel":{"S":"view"},"createdAt":{"S":"2026-01-11T16:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-006"},"entityType":{"S":"Partner"},"id":{"S":"partner-006"},"name":{"S":"Standard Chartered"},"type":{"S":"fi"},"reportsShared":{"N":"10"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-09T08:00:00Z"}}'
+SEED_DIR="/seed-data"
 
-# Trends
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#GB#trend-001"},"entityType":{"S":"Trend"},"id":{"S":"trend-001"},"country":{"S":"United Kingdom"},"countryCode":{"S":"GB"},"title":{"S":"Modern Slavery in Supply Chains"},"confidence":{"S":"high"},"exploitationType":{"S":"labour_exploitation"},"summary":{"S":"Increasing evidence of labour exploitation in UK supply chains, particularly in car washes, agriculture, and construction sectors."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#IN#trend-002"},"entityType":{"S":"Trend"},"id":{"S":"trend-002"},"country":{"S":"India"},"countryCode":{"S":"IN"},"title":{"S":"Child Labour in Manufacturing"},"confidence":{"S":"high"},"exploitationType":{"S":"child_labour"},"summary":{"S":"Persistent child labour issues in garment manufacturing and brick kilns, often linked to debt bondage."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#BR#trend-003"},"entityType":{"S":"Trend"},"id":{"S":"trend-003"},"country":{"S":"Brazil"},"countryCode":{"S":"BR"},"title":{"S":"Sexual Exploitation in Tourism"},"confidence":{"S":"medium"},"exploitationType":{"S":"sexual_exploitation"},"summary":{"S":"Growing concern about sexual exploitation linked to tourism industry in coastal areas."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}'
+if [ -d "$SEED_DIR" ] && [ -f "$SEED_DIR/partners.json" ]; then
+    python3 << 'PYTHON_SCRIPT'
+import json
+import subprocess
+import os
 
-# Reports
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-001"},"entityType":{"S":"Report"},"id":{"S":"report-001"},"orgId":{"S":"stt"},"title":{"S":"Labour Exploitation in UK Car Washes"},"country":{"S":"United Kingdom"},"sector":{"S":"Car Wash"},"exploitationType":{"S":"labour_exploitation"},"status":{"S":"approved"},"version":{"N":"3"},"wordCount":{"N":"2450"},"createdAt":{"S":"2026-01-10T10:00:00Z"},"updatedAt":{"S":"2026-01-12T14:30:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-002"},"entityType":{"S":"Report"},"id":{"S":"report-002"},"orgId":{"S":"stt"},"title":{"S":"Sexual Exploitation via Online Platforms in Italy"},"country":{"S":"Italy"},"sector":{"S":"Online Platforms"},"exploitationType":{"S":"sexual_exploitation"},"status":{"S":"in_review"},"version":{"N":"2"},"wordCount":{"N":"2180"},"createdAt":{"S":"2026-01-08T09:00:00Z"},"updatedAt":{"S":"2026-01-11T16:00:00Z"}}'
-awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-003"},"entityType":{"S":"Report"},"id":{"S":"report-003"},"orgId":{"S":"stt"},"title":{"S":"Child Labour in Indian Manufacturing"},"country":{"S":"India"},"sector":{"S":"Manufacturing"},"exploitationType":{"S":"child_labour"},"status":{"S":"draft"},"version":{"N":"1"},"wordCount":{"N":"1850"},"createdAt":{"S":"2026-01-05T11:00:00Z"},"updatedAt":{"S":"2026-01-05T11:00:00Z"}}'
+SEED_DIR = "/seed-data"
+TABLE_NAME = "lon12-table"
+REGION = "us-west-2"
+
+def load_json_file(filename):
+    filepath = os.path.join(SEED_DIR, filename)
+    if not os.path.exists(filepath):
+        print(f"  Warning: {filepath} not found")
+        return []
+    with open(filepath, 'r') as f:
+        return json.load(f)
+
+def batch_write_items(items, entity_type):
+    if not items:
+        return 0
+
+    count = 0
+    batch_size = 25
+
+    for i in range(0, len(items), batch_size):
+        batch = items[i:i+batch_size]
+        request_items = {
+            TABLE_NAME: [{"PutRequest": {"Item": item}} for item in batch]
+        }
+
+        # Write to temp file and use awslocal
+        with open('/tmp/batch.json', 'w') as f:
+            json.dump(request_items, f)
+
+        result = subprocess.run(
+            ['awslocal', 'dynamodb', 'batch-write-item',
+             '--request-items', 'file:///tmp/batch.json',
+             '--region', REGION],
+            capture_output=True, text=True
+        )
+
+        if result.returncode != 0:
+            print(f"  Error: {result.stderr}")
+
+        count += len(batch)
+
+    print(f"  Loaded {count} {entity_type}")
+    return count
+
+# Load all entity types
+files = [
+    ("partners.json", "Partners"),
+    ("trends.json", "Trends"),
+    ("reports.json", "Reports"),
+    ("conversations.json", "Conversations"),
+    ("messages.json", "Messages"),
+]
+
+total = 0
+for filename, entity_type in files:
+    items = load_json_file(filename)
+    total += batch_write_items(items, entity_type)
+
+print(f"\nTotal items loaded: {total}")
+PYTHON_SCRIPT
+
+else
+    echo "No seed-data directory found, loading hardcoded data..."
+
+    # Partners (fallback)
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-001"},"entityType":{"S":"Partner"},"id":{"S":"partner-001"},"name":{"S":"Barclays Bank"},"type":{"S":"fi"},"reportsShared":{"N":"12"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-10T10:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-002"},"entityType":{"S":"Partner"},"id":{"S":"partner-002"},"name":{"S":"HSBC"},"type":{"S":"fi"},"reportsShared":{"N":"8"},"accessLevel":{"S":"view"},"createdAt":{"S":"2026-01-08T09:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-003"},"entityType":{"S":"Partner"},"id":{"S":"partner-003"},"name":{"S":"Anti-Slavery International"},"type":{"S":"ngo"},"reportsShared":{"N":"15"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-05T11:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-004"},"entityType":{"S":"Partner"},"id":{"S":"partner-004"},"name":{"S":"Metropolitan Police"},"type":{"S":"le"},"reportsShared":{"N":"6"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-12T14:30:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-005"},"entityType":{"S":"Partner"},"id":{"S":"partner-005"},"name":{"S":"Europol"},"type":{"S":"le"},"reportsShared":{"N":"4"},"accessLevel":{"S":"view"},"createdAt":{"S":"2026-01-11T16:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"PARTNERS"},"SK":{"S":"PARTNER#partner-006"},"entityType":{"S":"Partner"},"id":{"S":"partner-006"},"name":{"S":"Standard Chartered"},"type":{"S":"fi"},"reportsShared":{"N":"10"},"accessLevel":{"S":"download"},"createdAt":{"S":"2026-01-09T08:00:00Z"}}' --region us-west-2
+
+    # Trends (fallback)
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#GB#trend-001"},"entityType":{"S":"Trend"},"id":{"S":"trend-001"},"country":{"S":"United Kingdom"},"countryCode":{"S":"GB"},"title":{"S":"Modern Slavery in Supply Chains"},"confidence":{"S":"high"},"exploitationType":{"S":"labour_exploitation"},"summary":{"S":"Increasing evidence of labour exploitation in UK supply chains, particularly in car washes, agriculture, and construction sectors."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#IN#trend-002"},"entityType":{"S":"Trend"},"id":{"S":"trend-002"},"country":{"S":"India"},"countryCode":{"S":"IN"},"title":{"S":"Child Labour in Manufacturing"},"confidence":{"S":"high"},"exploitationType":{"S":"child_labour"},"summary":{"S":"Persistent child labour issues in garment manufacturing and brick kilns, often linked to debt bondage."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"TRENDS"},"SK":{"S":"TREND#BR#trend-003"},"entityType":{"S":"Trend"},"id":{"S":"trend-003"},"country":{"S":"Brazil"},"countryCode":{"S":"BR"},"title":{"S":"Sexual Exploitation in Tourism"},"confidence":{"S":"medium"},"exploitationType":{"S":"sexual_exploitation"},"summary":{"S":"Growing concern about sexual exploitation linked to tourism industry in coastal areas."},"sources":{"S":"[]"},"lastUpdated":{"S":"2026-01-15T00:00:00Z"}}' --region us-west-2
+
+    # Reports (fallback)
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-001"},"entityType":{"S":"Report"},"id":{"S":"report-001"},"orgId":{"S":"stt"},"title":{"S":"Labour Exploitation in UK Car Washes"},"country":{"S":"United Kingdom"},"sector":{"S":"Car Wash"},"exploitationType":{"S":"labour_exploitation"},"status":{"S":"approved"},"version":{"N":"3"},"wordCount":{"N":"2450"},"createdAt":{"S":"2026-01-10T10:00:00Z"},"updatedAt":{"S":"2026-01-12T14:30:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-002"},"entityType":{"S":"Report"},"id":{"S":"report-002"},"orgId":{"S":"stt"},"title":{"S":"Sexual Exploitation via Online Platforms in Italy"},"country":{"S":"Italy"},"sector":{"S":"Online Platforms"},"exploitationType":{"S":"sexual_exploitation"},"status":{"S":"in_review"},"version":{"N":"2"},"wordCount":{"N":"2180"},"createdAt":{"S":"2026-01-08T09:00:00Z"},"updatedAt":{"S":"2026-01-11T16:00:00Z"}}' --region us-west-2
+    awslocal dynamodb put-item --table-name lon12-table --item '{"PK":{"S":"ORG#stt"},"SK":{"S":"REPORT#report-003"},"entityType":{"S":"Report"},"id":{"S":"report-003"},"orgId":{"S":"stt"},"title":{"S":"Child Labour in Indian Manufacturing"},"country":{"S":"India"},"sector":{"S":"Manufacturing"},"exploitationType":{"S":"child_labour"},"status":{"S":"draft"},"version":{"N":"1"},"wordCount":{"N":"1850"},"createdAt":{"S":"2026-01-05T11:00:00Z"},"updatedAt":{"S":"2026-01-05T11:00:00Z"}}' --region us-west-2
+
+    echo "  Loaded fallback data: 6 Partners, 3 Trends, 3 Reports"
+fi
 
 echo "LocalStack initialization complete!"

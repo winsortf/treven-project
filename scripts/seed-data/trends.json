@@ -1,0 +1,116 @@
+[
+  {
+    "summary": {
+      "S": "Growing concern about sexual exploitation linked to tourism industry in coastal areas."
+    },
+    "country": {
+      "S": "Brazil"
+    },
+    "exploitationType": {
+      "S": "sexual_exploitation"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "BR"
+    },
+    "confidence": {
+      "S": "medium"
+    },
+    "SK": {
+      "S": "TREND#BR#trend-003"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-003"
+    },
+    "title": {
+      "S": "Sexual Exploitation in Tourism"
+    }
+  },
+  {
+    "summary": {
+      "S": "Increasing evidence of labour exploitation in UK supply chains, particularly in car washes, agriculture, and construction sectors."
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "exploitationType": {
+      "S": "labour_exploitation"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "GB"
+    },
+    "confidence": {
+      "S": "high"
+    },
+    "SK": {
+      "S": "TREND#GB#trend-001"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-001"
+    },
+    "title": {
+      "S": "Modern Slavery in Supply Chains"
+    }
+  },
+  {
+    "summary": {
+      "S": "Persistent child labour issues in garment manufacturing and brick kilns, often linked to debt bondage."
+    },
+    "country": {
+      "S": "India"
+    },
+    "exploitationType": {
+      "S": "child_labour"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "IN"
+    },
+    "confidence": {
+      "S": "high"
+    },
+    "SK": {
+      "S": "TREND#IN#trend-002"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-002"
+    },
+    "title": {
+      "S": "Child Labour in Manufacturing"
+    }
+  }
+]

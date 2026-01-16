@@ -1,0 +1,834 @@
+[
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:35:36.482612179+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "id": {
+      "S": "062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:35:36.482612179+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:43:38.636541805+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:43:38.636541805+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:20:39.911643167+00:00"
+    },
+    "country": {
+      "S": "Philippines"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "sector": {
+      "S": "Online Sexual Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:20:39.911643167+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:53:15.754789461+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:53:15.754789461+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:25:35.597871971+00:00"
+    },
+    "country": {
+      "S": "Brazil"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:25:35.597871971+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:57:38.483060097+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "id": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:57:38.483060097+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:14.355776919+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:45:14.355776919+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:44:29.946174343+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:44:29.946174343+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:45.954635503+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "id": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:46:45.954635503+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:53:59.411537509+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "id": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:53:59.411537509+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T15:05:06.225525001+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "id": {
+      "S": "64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T15:05:06.225525001+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:55:55.890319341+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:55:55.890319341+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:49:32.174225386+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:49:32.174225386+00:00"
+    }
+  },
+  {
+    "country": {
+      "NULL": true
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:58:36.003185971+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "id": {
+      "S": "9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "NULL": true
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:58:36.003185971+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:43:19.700310796+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:43:19.700310796+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:08.836036166+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "id": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:28:08.836036166+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:04:30.258156968+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:04:30.258156968+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:07:33.725972541+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T15:07:33.725972541+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:55:46.267820086+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "id": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:55:46.267820086+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:52:57.838108925+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "id": {
+      "S": "e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:52:57.838108925+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "Philippines"
+    },
+    "createdAt": {
+      "S": "2026-01-15T10:13:08.179904638+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "sector": {
+      "S": "Online Sexual Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T10:13:08.179904638+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:00:12.983646043+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "id": {
+      "S": "f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:00:12.983646043+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:55:42.098324126+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "id": {
+      "S": "f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:55:42.098324126+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-16T16:46:15.551315130+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "id": {
+      "S": "f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-16T16:46:15.551315130+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:09:59.782751093+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "id": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T10:09:59.782751093+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:31:58.775595634+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "id": {
+      "S": "fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:31:58.775595634+00:00"
+    }
+  }
+]

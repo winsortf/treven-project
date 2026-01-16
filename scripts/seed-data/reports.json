@@ -1,0 +1,134 @@
+[
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "wordCount": {
+      "N": "2450"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Labour Exploitation in UK Car Washes"
+    },
+    "version": {
+      "N": "3"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "labour_exploitation"
+    },
+    "createdAt": {
+      "S": "2026-01-10T10:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-001"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-001"
+    },
+    "sector": {
+      "S": "Car Wash"
+    },
+    "status": {
+      "S": "approved"
+    },
+    "updatedAt": {
+      "S": "2026-01-12T14:30:00Z"
+    }
+  },
+  {
+    "country": {
+      "S": "Italy"
+    },
+    "wordCount": {
+      "N": "2180"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Sexual Exploitation via Online Platforms in Italy"
+    },
+    "version": {
+      "N": "2"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "sexual_exploitation"
+    },
+    "createdAt": {
+      "S": "2026-01-08T09:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-002"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-002"
+    },
+    "sector": {
+      "S": "Online Platforms"
+    },
+    "status": {
+      "S": "in_review"
+    },
+    "updatedAt": {
+      "S": "2026-01-11T16:00:00Z"
+    }
+  },
+  {
+    "country": {
+      "S": "India"
+    },
+    "wordCount": {
+      "N": "1850"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Child Labour in Indian Manufacturing"
+    },
+    "version": {
+      "N": "1"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "child_labour"
+    },
+    "createdAt": {
+      "S": "2026-01-05T11:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-003"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-003"
+    },
+    "sector": {
+      "S": "Manufacturing"
+    },
+    "status": {
+      "S": "draft"
+    },
+    "updatedAt": {
+      "S": "2026-01-05T11:00:00Z"
+    }
+  }
+]

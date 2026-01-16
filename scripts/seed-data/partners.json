@@ -1,0 +1,176 @@
+[
+  {
+    "createdAt": {
+      "S": "2026-01-10T10:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-001"
+    },
+    "name": {
+      "S": "Barclays Bank"
+    },
+    "reportsShared": {
+      "N": "12"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-001"
+    },
+    "type": {
+      "S": "fi"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-08T09:00:00Z"
+    },
+    "accessLevel": {
+      "S": "view"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-002"
+    },
+    "name": {
+      "S": "HSBC"
+    },
+    "reportsShared": {
+      "N": "8"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-002"
+    },
+    "type": {
+      "S": "fi"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-05T11:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-003"
+    },
+    "name": {
+      "S": "Anti-Slavery International"
+    },
+    "reportsShared": {
+      "N": "15"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-003"
+    },
+    "type": {
+      "S": "ngo"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-12T14:30:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-004"
+    },
+    "name": {
+      "S": "Metropolitan Police"
+    },
+    "reportsShared": {
+      "N": "6"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-004"
+    },
+    "type": {
+      "S": "le"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-11T16:00:00Z"
+    },
+    "accessLevel": {
+      "S": "view"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-005"
+    },
+    "name": {
+      "S": "Europol"
+    },
+    "reportsShared": {
+      "N": "4"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-005"
+    },
+    "type": {
+      "S": "le"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-09T08:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-006"
+    },
+    "name": {
+      "S": "Standard Chartered"
+    },
+    "reportsShared": {
+      "N": "10"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-006"
+    },
+    "type": {
+      "S": "fi"
+    }
+  }
+]

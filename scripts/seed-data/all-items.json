@@ -1,0 +1,4774 @@
+[
+  {
+    "createdAt": {
+      "S": "2026-01-10T10:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-001"
+    },
+    "name": {
+      "S": "Barclays Bank"
+    },
+    "reportsShared": {
+      "N": "12"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-001"
+    },
+    "type": {
+      "S": "fi"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-08T09:00:00Z"
+    },
+    "accessLevel": {
+      "S": "view"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-002"
+    },
+    "name": {
+      "S": "HSBC"
+    },
+    "reportsShared": {
+      "N": "8"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-002"
+    },
+    "type": {
+      "S": "fi"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-05T11:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-003"
+    },
+    "name": {
+      "S": "Anti-Slavery International"
+    },
+    "reportsShared": {
+      "N": "15"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-003"
+    },
+    "type": {
+      "S": "ngo"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-12T14:30:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-004"
+    },
+    "name": {
+      "S": "Metropolitan Police"
+    },
+    "reportsShared": {
+      "N": "6"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-004"
+    },
+    "type": {
+      "S": "le"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-11T16:00:00Z"
+    },
+    "accessLevel": {
+      "S": "view"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-005"
+    },
+    "name": {
+      "S": "Europol"
+    },
+    "reportsShared": {
+      "N": "4"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-005"
+    },
+    "type": {
+      "S": "le"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-09T08:00:00Z"
+    },
+    "accessLevel": {
+      "S": "download"
+    },
+    "entityType": {
+      "S": "Partner"
+    },
+    "SK": {
+      "S": "PARTNER#partner-006"
+    },
+    "name": {
+      "S": "Standard Chartered"
+    },
+    "reportsShared": {
+      "N": "10"
+    },
+    "PK": {
+      "S": "PARTNERS"
+    },
+    "id": {
+      "S": "partner-006"
+    },
+    "type": {
+      "S": "fi"
+    }
+  },
+  {
+    "summary": {
+      "S": "Growing concern about sexual exploitation linked to tourism industry in coastal areas."
+    },
+    "country": {
+      "S": "Brazil"
+    },
+    "exploitationType": {
+      "S": "sexual_exploitation"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "BR"
+    },
+    "confidence": {
+      "S": "medium"
+    },
+    "SK": {
+      "S": "TREND#BR#trend-003"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-003"
+    },
+    "title": {
+      "S": "Sexual Exploitation in Tourism"
+    }
+  },
+  {
+    "summary": {
+      "S": "Increasing evidence of labour exploitation in UK supply chains, particularly in car washes, agriculture, and construction sectors."
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "exploitationType": {
+      "S": "labour_exploitation"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "GB"
+    },
+    "confidence": {
+      "S": "high"
+    },
+    "SK": {
+      "S": "TREND#GB#trend-001"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-001"
+    },
+    "title": {
+      "S": "Modern Slavery in Supply Chains"
+    }
+  },
+  {
+    "summary": {
+      "S": "Persistent child labour issues in garment manufacturing and brick kilns, often linked to debt bondage."
+    },
+    "country": {
+      "S": "India"
+    },
+    "exploitationType": {
+      "S": "child_labour"
+    },
+    "lastUpdated": {
+      "S": "2026-01-15T00:00:00Z"
+    },
+    "sources": {
+      "S": "[]"
+    },
+    "entityType": {
+      "S": "Trend"
+    },
+    "countryCode": {
+      "S": "IN"
+    },
+    "confidence": {
+      "S": "high"
+    },
+    "SK": {
+      "S": "TREND#IN#trend-002"
+    },
+    "PK": {
+      "S": "TRENDS"
+    },
+    "id": {
+      "S": "trend-002"
+    },
+    "title": {
+      "S": "Child Labour in Manufacturing"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "wordCount": {
+      "N": "2450"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Labour Exploitation in UK Car Washes"
+    },
+    "version": {
+      "N": "3"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "labour_exploitation"
+    },
+    "createdAt": {
+      "S": "2026-01-10T10:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-001"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-001"
+    },
+    "sector": {
+      "S": "Car Wash"
+    },
+    "status": {
+      "S": "approved"
+    },
+    "updatedAt": {
+      "S": "2026-01-12T14:30:00Z"
+    }
+  },
+  {
+    "country": {
+      "S": "Italy"
+    },
+    "wordCount": {
+      "N": "2180"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Sexual Exploitation via Online Platforms in Italy"
+    },
+    "version": {
+      "N": "2"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "sexual_exploitation"
+    },
+    "createdAt": {
+      "S": "2026-01-08T09:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-002"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-002"
+    },
+    "sector": {
+      "S": "Online Platforms"
+    },
+    "status": {
+      "S": "in_review"
+    },
+    "updatedAt": {
+      "S": "2026-01-11T16:00:00Z"
+    }
+  },
+  {
+    "country": {
+      "S": "India"
+    },
+    "wordCount": {
+      "N": "1850"
+    },
+    "entityType": {
+      "S": "Report"
+    },
+    "title": {
+      "S": "Child Labour in Indian Manufacturing"
+    },
+    "version": {
+      "N": "1"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "exploitationType": {
+      "S": "child_labour"
+    },
+    "createdAt": {
+      "S": "2026-01-05T11:00:00Z"
+    },
+    "SK": {
+      "S": "REPORT#report-003"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "report-003"
+    },
+    "sector": {
+      "S": "Manufacturing"
+    },
+    "status": {
+      "S": "draft"
+    },
+    "updatedAt": {
+      "S": "2026-01-05T11:00:00Z"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:35:36.482612179+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "id": {
+      "S": "062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:35:36.482612179+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:43:38.636541805+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:43:38.636541805+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:20:39.911643167+00:00"
+    },
+    "country": {
+      "S": "Philippines"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "sector": {
+      "S": "Online Sexual Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:20:39.911643167+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:53:15.754789461+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:53:15.754789461+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:25:35.597871971+00:00"
+    },
+    "country": {
+      "S": "Brazil"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:25:35.597871971+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:57:38.483060097+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "id": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:57:38.483060097+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:14.355776919+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:45:14.355776919+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:44:29.946174343+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:44:29.946174343+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:45.954635503+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "id": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:46:45.954635503+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:53:59.411537509+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "id": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:53:59.411537509+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T15:05:06.225525001+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "id": {
+      "S": "64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T15:05:06.225525001+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:55:55.890319341+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:55:55.890319341+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:49:32.174225386+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:49:32.174225386+00:00"
+    }
+  },
+  {
+    "country": {
+      "NULL": true
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:58:36.003185971+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "id": {
+      "S": "9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "NULL": true
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:58:36.003185971+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:43:19.700310796+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:43:19.700310796+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:08.836036166+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "id": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:28:08.836036166+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:04:30.258156968+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:04:30.258156968+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:07:33.725972541+00:00"
+    },
+    "country": {
+      "S": "United Kingdom"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T15:07:33.725972541+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:55:46.267820086+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "id": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:55:46.267820086+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:52:57.838108925+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "id": {
+      "S": "e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:52:57.838108925+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "Philippines"
+    },
+    "createdAt": {
+      "S": "2026-01-15T10:13:08.179904638+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "sector": {
+      "S": "Online Sexual Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T10:13:08.179904638+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:00:12.983646043+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "id": {
+      "S": "f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:00:12.983646043+00:00"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T08:55:42.098324126+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "id": {
+      "S": "f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T08:55:42.098324126+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "BR"
+    },
+    "createdAt": {
+      "S": "2026-01-16T16:46:15.551315130+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "id": {
+      "S": "f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-16T16:46:15.551315130+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:09:59.782751093+00:00"
+    },
+    "country": {
+      "S": "BR"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "id": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T10:09:59.782751093+00:00"
+    },
+    "timeRange": {
+      "S": "12m"
+    }
+  },
+  {
+    "country": {
+      "S": "United Kingdom"
+    },
+    "createdAt": {
+      "S": "2026-01-15T09:31:58.775595634+00:00"
+    },
+    "entityType": {
+      "S": "Conversation"
+    },
+    "SK": {
+      "S": "CONVERSATION#fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "id": {
+      "S": "fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "sector": {
+      "S": "Labour Exploitation"
+    },
+    "orgId": {
+      "S": "stt"
+    },
+    "timeRange": {
+      "S": "12m"
+    },
+    "updatedAt": {
+      "S": "2026-01-15T09:31:58.775595634+00:00"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:35:36.526937596+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#062e0b8a-9d04-4e95-8e86-6669b623b84f#676456f7-9353-4bf5-a156-cab5a7d94b21"
+    },
+    "id": {
+      "S": "676456f7-9353-4bf5-a156-cab5a7d94b21"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **United Kingdom** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:35:36.497184846+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "SK": {
+      "S": "MESSAGE#062e0b8a-9d04-4e95-8e86-6669b623b84f#95cdf929-7aa2-403b-99f5-8147cb78d736"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "95cdf929-7aa2-403b-99f5-8147cb78d736"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:35:36.509373304+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "062e0b8a-9d04-4e95-8e86-6669b623b84f"
+    },
+    "SK": {
+      "S": "MESSAGE#062e0b8a-9d04-4e95-8e86-6669b623b84f#e29e343d-978f-4196-93ed-d1104de3e22a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "e29e343d-978f-4196-93ed-d1104de3e22a"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for United Kingdom / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-16T16:57:34.708036541+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#151d9b5e-7883-4d36-9840-7c146aaf1b21"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "151d9b5e-7883-4d36-9840-7c146aaf1b21"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:42.246025584+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#26f189d1-4309-48ff-b3be-ffa9629cef29"
+    },
+    "id": {
+      "S": "26f189d1-4309-48ff-b3be-ffa9629cef29"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:38.681358389+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#4d8ee9f8-86d6-419c-b4e9-a7afcf486d78"
+    },
+    "id": {
+      "S": "4d8ee9f8-86d6-419c-b4e9-a7afcf486d78"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **United Kingdom**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:38.670046972+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#6fd545a1-e916-4d93-a7aa-11226674c8e2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "6fd545a1-e916-4d93-a7aa-11226674c8e2"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-16T16:57:34.742211+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#76b1802d-a4cd-43fb-b7e7-083af90ef12c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "76b1802d-a4cd-43fb-b7e7-083af90ef12c"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:38.652231639+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#77e95e5b-082c-4c0e-bd05-cc97171ba858"
+    },
+    "id": {
+      "S": "77e95e5b-082c-4c0e-bd05-cc97171ba858"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:42.233602834+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "069d389e-b378-4957-bae1-4d041e0a1ff7"
+    },
+    "SK": {
+      "S": "MESSAGE#069d389e-b378-4957-bae1-4d041e0a1ff7#8d88dce5-f06a-4708-b250-4cc7678d4c25"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "8d88dce5-f06a-4708-b250-4cc7678d4c25"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:20:59.643460218+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#0e354111-ac88-4b92-bb0f-483da941f5d6#2b6654e8-c77a-4e03-9389-1769c1d66108"
+    },
+    "id": {
+      "S": "2b6654e8-c77a-4e03-9389-1769c1d66108"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **Philippines** focusing on **Online Sexual Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [OSEC Cases in the Philippines: A 2024 Analysis](https://unodc.org/philippines-osec-2024) - UNODC\n- [Online Sexual Exploitation of Children in Southeast Asia](https://unicef.org/osec-seasia) - UNICEF\n- [Philippines Anti-Trafficking Report](https://state.gov/tip-philippines-2024) - US State Department\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:20:39.941494042+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#0e354111-ac88-4b92-bb0f-483da941f5d6#45012af4-314a-4d3c-bb4f-c3fafb4a8a5b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "45012af4-314a-4d3c-bb4f-c3fafb4a8a5b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:20:59.633760135+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "0e354111-ac88-4b92-bb0f-483da941f5d6"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#0e354111-ac88-4b92-bb0f-483da941f5d6#f6065775-1a01-4fab-b5c1-39d6e6745bc6"
+    },
+    "id": {
+      "S": "f6065775-1a01-4fab-b5c1-39d6e6745bc6"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:53:15.792178003+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "SK": {
+      "S": "MESSAGE#0e583ded-5136-4a91-ab73-c7f94b0bda76#5b5dcc1c-98c1-439e-8d84-6a9e3d227859"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "5b5dcc1c-98c1-439e-8d84-6a9e3d227859"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I apologize, but I'm currently experiencing technical difficulties connecting to the intelligence analysis service. Please try again in a moment, or contact support if the issue persists."
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:53:15.785250670+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#0e583ded-5136-4a91-ab73-c7f94b0bda76#6a01d583-0667-447c-ba76-5570dd5ab4b2"
+    },
+    "id": {
+      "S": "6a01d583-0667-447c-ba76-5570dd5ab4b2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:53:15.769581753+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "0e583ded-5136-4a91-ab73-c7f94b0bda76"
+    },
+    "SK": {
+      "S": "MESSAGE#0e583ded-5136-4a91-ab73-c7f94b0bda76#b5060739-8af1-4a01-9a28-d9dce89ea273"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "b5060739-8af1-4a01-9a28-d9dce89ea273"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:26:02.053916052+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "SK": {
+      "S": "MESSAGE#1aad93d4-2799-45a3-90ce-36b9b424f3b7#6493ab30-11ca-4286-a399-c204a125ae29"
+    },
+    "id": {
+      "S": "6493ab30-11ca-4286-a399-c204a125ae29"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **Brazil** focusing on **Labour Exploitation**.\n\n**Sources Found**: 3 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [Brazil Human Trafficking Report 2024](https://state.gov/tip-brazil-2024) - US State Department\n- [Labour Exploitation in Brazilian Agriculture](https://ilo.org/brazil-agriculture-2024) - ILO\n- [Modern Slavery in South America](https://walkfree.org/south-america-2024) - Walk Free Foundation\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:26:02.019988427+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "SK": {
+      "S": "MESSAGE#1aad93d4-2799-45a3-90ce-36b9b424f3b7#ac86338a-9c36-4270-b2ae-3c72ea0bca36"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "ac86338a-9c36-4270-b2ae-3c72ea0bca36"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:25:35.613890179+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "1aad93d4-2799-45a3-90ce-36b9b424f3b7"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#1aad93d4-2799-45a3-90ce-36b9b424f3b7#de65b1db-2ef9-40fe-946a-d313e4ead587"
+    },
+    "id": {
+      "S": "de65b1db-2ef9-40fe-946a-d313e4ead587"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:57:38.520488930+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#215de395-187f-4073-9051-3b1edc52fa39#06843564-b413-4f24-aa66-9b3bf42cd79f"
+    },
+    "id": {
+      "S": "06843564-b413-4f24-aa66-9b3bf42cd79f"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:57:38.539247097+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#215de395-187f-4073-9051-3b1edc52fa39#56a47129-4a9a-49d2-98ae-6eac3cc72992"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "56a47129-4a9a-49d2-98ae-6eac3cc72992"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:57:38.507589180+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#215de395-187f-4073-9051-3b1edc52fa39#cb194aa9-8ca9-43b8-88e4-f507ed39fcd3"
+    },
+    "id": {
+      "S": "cb194aa9-8ca9-43b8-88e4-f507ed39fcd3"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:57:45.706929503+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#215de395-187f-4073-9051-3b1edc52fa39#ef2bdd3b-b15f-45ae-af82-c03f9ff59a72"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "ef2bdd3b-b15f-45ae-af82-c03f9ff59a72"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **BR**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:57:45.695959044+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "215de395-187f-4073-9051-3b1edc52fa39"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#215de395-187f-4073-9051-3b1edc52fa39#f669250a-ec6b-47ea-b2d6-5045a4ed1a26"
+    },
+    "id": {
+      "S": "f669250a-ec6b-47ea-b2d6-5045a4ed1a26"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:24.141684423+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861#2a200c3a-9d4f-42e1-9870-1de323cec08a"
+    },
+    "id": {
+      "S": "2a200c3a-9d4f-42e1-9870-1de323cec08a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:14.404796877+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861#8136773e-f94c-4fcc-adf9-85087bfb7fc2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "8136773e-f94c-4fcc-adf9-85087bfb7fc2"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **BR**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:24.155425507+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861#c7042a81-af41-4f07-8073-90c4e82d7ddf"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c7042a81-af41-4f07-8073-90c4e82d7ddf"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:14.390067502+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "SK": {
+      "S": "MESSAGE#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861#d53cd254-dbb7-4e47-8442-e3d43408a0bf"
+    },
+    "id": {
+      "S": "d53cd254-dbb7-4e47-8442-e3d43408a0bf"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:45:14.373298127+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "2f4f4284-51d0-4b64-b1f0-1f8c0ef90861"
+    },
+    "SK": {
+      "S": "MESSAGE#2f4f4284-51d0-4b64-b1f0-1f8c0ef90861#ebab9ac8-e26d-4376-a169-aa877b94899b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "ebab9ac8-e26d-4376-a169-aa877b94899b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:44:29.988020885+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "SK": {
+      "S": "MESSAGE#36275775-c714-468f-94e9-ce8b302bab3a#3251043d-f24f-4023-96c3-3938c6cdf7f2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "3251043d-f24f-4023-96c3-3938c6cdf7f2"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for United Kingdom / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:44:30.009037218+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#36275775-c714-468f-94e9-ce8b302bab3a#4f39fbb6-8f81-4118-8f22-896924f9496b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "4f39fbb6-8f81-4118-8f22-896924f9496b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **United Kingdom** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:44:33.952115761+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#36275775-c714-468f-94e9-ce8b302bab3a#9dbdcf73-e18e-4f7f-91ef-64665d877d25"
+    },
+    "id": {
+      "S": "9dbdcf73-e18e-4f7f-91ef-64665d877d25"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:44:33.940173553+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#36275775-c714-468f-94e9-ce8b302bab3a#c81da990-c721-4c42-ae72-326022f31908"
+    },
+    "id": {
+      "S": "c81da990-c721-4c42-ae72-326022f31908"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:44:29.967739301+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "36275775-c714-468f-94e9-ce8b302bab3a"
+    },
+    "SK": {
+      "S": "MESSAGE#36275775-c714-468f-94e9-ce8b302bab3a#dd991d6b-4d1f-4480-b398-7a58de0c7487"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "dd991d6b-4d1f-4480-b398-7a58de0c7487"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:52.105641256+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#4723c0bb-5806-474b-930c-ff17bea4a84a"
+    },
+    "id": {
+      "S": "4723c0bb-5806-474b-930c-ff17bea4a84a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:56.339750216+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#580338a1-a4d3-4a4c-9353-184d1e0c06cf"
+    },
+    "id": {
+      "S": "580338a1-a4d3-4a4c-9353-184d1e0c06cf"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:56.353732799+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#7b68cc95-bac0-4905-b657-444263513c19"
+    },
+    "id": {
+      "S": "7b68cc95-bac0-4905-b657-444263513c19"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **BR**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:46.026253920+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#7bc90de4-659a-457e-8169-ed137561f28c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "7bc90de4-659a-457e-8169-ed137561f28c"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:46.005611753+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#a5629711-dfaf-4cb5-8032-f63168266159"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "a5629711-dfaf-4cb5-8032-f63168266159"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:45.986305420+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#db9533bf-5ef5-457d-8dd2-215daad824bb"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "db9533bf-5ef5-457d-8dd2-215daad824bb"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:46:52.115301297+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "3ae61134-bec3-4887-8a36-a1ac2e4bbe36"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#3ae61134-bec3-4887-8a36-a1ac2e4bbe36#e23903c4-2c8b-4dee-bf2e-362efa3c05d5"
+    },
+    "id": {
+      "S": "e23903c4-2c8b-4dee-bf2e-362efa3c05d5"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:54:02.866690594+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d#2f9eda83-b6a9-492d-9df7-06cc6f11136c"
+    },
+    "id": {
+      "S": "2f9eda83-b6a9-492d-9df7-06cc6f11136c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **BR**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:53:59.446797093+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "SK": {
+      "S": "MESSAGE#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d#455c9f81-b2be-4ce8-805a-09f25cefa30b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "455c9f81-b2be-4ce8-805a-09f25cefa30b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:53:59.428051343+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "SK": {
+      "S": "MESSAGE#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d#87af93a1-5d85-404e-b3fe-26d246741fb6"
+    },
+    "id": {
+      "S": "87af93a1-5d85-404e-b3fe-26d246741fb6"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:54:02.857074553+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "SK": {
+      "S": "MESSAGE#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d#a06885c3-f1e2-4141-aea3-476ed995c06c"
+    },
+    "id": {
+      "S": "a06885c3-f1e2-4141-aea3-476ed995c06c"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:53:59.498643426+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#46c2b9ed-6b79-45b3-a46b-4ccc0ebe422d#fc95a31c-f137-49d2-b014-260d752f971d"
+    },
+    "id": {
+      "S": "fc95a31c-f137-49d2-b014-260d752f971d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:05:06.276377668+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "SK": {
+      "S": "MESSAGE#64002826-e6fb-44db-a608-5abfc20cde62#8e31b301-8605-4db1-a6af-12ec8e896404"
+    },
+    "id": {
+      "S": "8e31b301-8605-4db1-a6af-12ec8e896404"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:05:06.237215876+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#64002826-e6fb-44db-a608-5abfc20cde62#c9f2e326-537a-48ae-97b7-d77ea317fa8d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c9f2e326-537a-48ae-97b7-d77ea317fa8d"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:05:06.260396084+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "64002826-e6fb-44db-a608-5abfc20cde62"
+    },
+    "SK": {
+      "S": "MESSAGE#64002826-e6fb-44db-a608-5abfc20cde62#ed0cdd20-9e4e-4e6a-b69a-77bf0fd78607"
+    },
+    "id": {
+      "S": "ed0cdd20-9e4e-4e6a-b69a-77bf0fd78607"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:55.926790591+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#65afe746-72d8-452b-9c4f-eb9a481290d1#401100aa-d14c-4a8f-8519-3f9cf114cbc4"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "401100aa-d14c-4a8f-8519-3f9cf114cbc4"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:55.907151175+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "SK": {
+      "S": "MESSAGE#65afe746-72d8-452b-9c4f-eb9a481290d1#62253ec7-1606-4c4d-9766-eadeea09c8ac"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "62253ec7-1606-4c4d-9766-eadeea09c8ac"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:55.935733841+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "65afe746-72d8-452b-9c4f-eb9a481290d1"
+    },
+    "SK": {
+      "S": "MESSAGE#65afe746-72d8-452b-9c4f-eb9a481290d1#8b09f793-b112-4777-b132-9598f5725bf5"
+    },
+    "id": {
+      "S": "8b09f793-b112-4777-b132-9598f5725bf5"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I apologize, but I'm currently experiencing technical difficulties connecting to the intelligence analysis service. Please try again in a moment, or contact support if the issue persists."
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:49:32.210460802+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "SK": {
+      "S": "MESSAGE#7f443d87-e75d-49a2-8498-9d158072f039#0b228949-695e-4877-be9f-e2f7ceb7f61b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0b228949-695e-4877-be9f-e2f7ceb7f61b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:49:32.190467761+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#7f443d87-e75d-49a2-8498-9d158072f039#6842bf91-fa4c-4e51-b68b-c9ce684af74e"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "6842bf91-fa4c-4e51-b68b-c9ce684af74e"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:49:32.227209594+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "7f443d87-e75d-49a2-8498-9d158072f039"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#7f443d87-e75d-49a2-8498-9d158072f039#ed87abfe-b020-48ff-be32-bccf6cf6a98a"
+    },
+    "id": {
+      "S": "ed87abfe-b020-48ff-be32-bccf6cf6a98a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:58:36.018613471+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "SK": {
+      "S": "MESSAGE#9a98e736-5e7a-4577-a9e6-f18eeddca50c#02de140e-c086-49cb-8c04-8338ed87d6f2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "02de140e-c086-49cb-8c04-8338ed87d6f2"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:58:42.968570252+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "SK": {
+      "S": "MESSAGE#9a98e736-5e7a-4577-a9e6-f18eeddca50c#0c2c04eb-dd11-4312-9970-7886208d0e62"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0c2c04eb-dd11-4312-9970-7886208d0e62"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:58:43.075828502+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "9a98e736-5e7a-4577-a9e6-f18eeddca50c"
+    },
+    "SK": {
+      "S": "MESSAGE#9a98e736-5e7a-4577-a9e6-f18eeddca50c#a32b67f4-a964-4ffb-b0e8-ef54fc72a078"
+    },
+    "id": {
+      "S": "a32b67f4-a964-4ffb-b0e8-ef54fc72a078"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends:\n\n**Regional Focus**: Global\n\n**Key Patterns Identified**:\n1. Labour exploitation remains the most prevalent form\n2. Online recruitment methods are increasing\n3. Cross-border movement patterns show seasonal variation\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:29.150645467+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#a1d4fd8a-5198-4846-a379-61f21fe5bdfb#3faec126-8fce-48ff-a5de-40ff57b245ee"
+    },
+    "id": {
+      "S": "3faec126-8fce-48ff-a5de-40ff57b245ee"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I'm your intelligence assistant for STOP THE TRAFFIK. I can help you with:\n\n**Current Context**: United Kingdom / Labour Exploitation\n\n**Report Generation**:\n- Generate Key Judgement (KJ) reports\n- Analyze OSINT sources\n- Create executive summaries\n\n**Trend Analysis**:\n- Identify trafficking patterns by region\n- Analyze exploitation types\n- Track emerging threats\n\n**Red Flag Indicators**:\n- Generate indicators for Financial Institutions\n- Behaviour-based detection patterns\n- Risk assessment frameworks\n\n**Education Materials**:\n- School lesson content\n- Social media campaigns\n- Infographics and posters\n\n**What would you like to explore?** You can ask me to:\n- \"Generate a KJ report\"\n- \"Analyze trends\"\n- \"Create red flag indicators for FIs\"\n- \"Create education materials about online safety\"\n\nHow can I help you today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:19.735830796+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "SK": {
+      "S": "MESSAGE#a1d4fd8a-5198-4846-a379-61f21fe5bdfb#6c28dd17-f16a-4240-8cf2-65dc96460015"
+    },
+    "id": {
+      "S": "6c28dd17-f16a-4240-8cf2-65dc96460015"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:19.755062171+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "SK": {
+      "S": "MESSAGE#a1d4fd8a-5198-4846-a379-61f21fe5bdfb#a5851427-ffcf-44aa-aa54-6b3075eaa460"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "a5851427-ffcf-44aa-aa54-6b3075eaa460"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for United Kingdom / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:19.777024671+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "SK": {
+      "S": "MESSAGE#a1d4fd8a-5198-4846-a379-61f21fe5bdfb#c2f2430e-f330-4ecf-85e6-61923e9242c8"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c2f2430e-f330-4ecf-85e6-61923e9242c8"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **United Kingdom** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:43:29.140654134+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "a1d4fd8a-5198-4846-a379-61f21fe5bdfb"
+    },
+    "SK": {
+      "S": "MESSAGE#a1d4fd8a-5198-4846-a379-61f21fe5bdfb#fbc7f6b3-1938-4f35-a7d0-c452994ea32f"
+    },
+    "id": {
+      "S": "fbc7f6b3-1938-4f35-a7d0-c452994ea32f"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Identify information gaps and turn them into Information Requirements"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:08.872388875+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#1e7e824e-8580-425a-85e2-f635f187cc4b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "1e7e824e-8580-425a-85e2-f635f187cc4b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for United Kingdom / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:26.924568800+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#3b1eba4c-f047-446b-9b52-46a042f82a42"
+    },
+    "id": {
+      "S": "3b1eba4c-f047-446b-9b52-46a042f82a42"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:26.935037633+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#8155205d-029a-4da8-9ca7-2fb949c9780a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "8155205d-029a-4da8-9ca7-2fb949c9780a"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **United Kingdom**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:08.887336625+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#938eaf39-4b0d-421c-a78b-d590187c5ce9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "938eaf39-4b0d-421c-a78b-d590187c5ce9"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **United Kingdom** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:32.888313511+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#9f5fac5b-cbc1-48c9-ad52-5743f384bfd9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "9f5fac5b-cbc1-48c9-ad52-5743f384bfd9"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Identify information gaps and turn them into Information Requirements"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:08.848901958+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#c7812fce-633b-4a0a-848a-58ed84b99f16"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "c7812fce-633b-4a0a-848a-58ed84b99f16"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:28:32.898414969+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "bb67d252-62ad-43ac-9269-578df578511b"
+    },
+    "SK": {
+      "S": "MESSAGE#bb67d252-62ad-43ac-9269-578df578511b#e7e36572-b0b1-46a1-b1b1-399f920030b7"
+    },
+    "id": {
+      "S": "e7e36572-b0b1-46a1-b1b1-399f920030b7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I'm your intelligence assistant for STOP THE TRAFFIK. I can help you with:\n\n**Current Context**: United Kingdom / Labour Exploitation\n\n**Report Generation**:\n- Generate Key Judgement (KJ) reports\n- Analyze OSINT sources\n- Create executive summaries\n\n**Trend Analysis**:\n- Identify trafficking patterns by region\n- Analyze exploitation types\n- Track emerging threats\n\n**Red Flag Indicators**:\n- Generate indicators for Financial Institutions\n- Behaviour-based detection patterns\n- Risk assessment frameworks\n\n**Education Materials**:\n- School lesson content\n- Social media campaigns\n- Infographics and posters\n\n**What would you like to explore?** You can ask me to:\n- \"Generate a KJ report\"\n- \"Analyze trends\"\n- \"Create red flag indicators for FIs\"\n- \"Create education materials about online safety\"\n\nHow can I help you today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:04:30.300890760+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#c1dcf19a-a0d5-4bf0-ad12-1ec255238446#1f10b57f-4512-43f5-8892-c8e573d55b47"
+    },
+    "id": {
+      "S": "1f10b57f-4512-43f5-8892-c8e573d55b47"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends:\n\n**Regional Focus**: United Kingdom\n\n**Key Patterns Identified**:\n1. Labour exploitation remains the most prevalent form\n2. Online recruitment methods are increasing\n3. Cross-border movement patterns show seasonal variation\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:04:30.272029177+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#c1dcf19a-a0d5-4bf0-ad12-1ec255238446#78893df0-1f87-483a-b5cc-5a27800ff55f"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "78893df0-1f87-483a-b5cc-5a27800ff55f"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:04:30.285681135+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "c1dcf19a-a0d5-4bf0-ad12-1ec255238446"
+    },
+    "SK": {
+      "S": "MESSAGE#c1dcf19a-a0d5-4bf0-ad12-1ec255238446#f97c93d6-8d5b-47c0-9ac7-1aa14db969f2"
+    },
+    "id": {
+      "S": "f97c93d6-8d5b-47c0-9ac7-1aa14db969f2"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:07:33.756346791+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "SK": {
+      "S": "MESSAGE#c67565f1-df9c-47bf-81c5-ec62957307f9#29c3cb50-8453-4549-a083-917fbcd51612"
+    },
+    "id": {
+      "S": "29c3cb50-8453-4549-a083-917fbcd51612"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:07:33.791853291+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "SK": {
+      "S": "MESSAGE#c67565f1-df9c-47bf-81c5-ec62957307f9#b76ce9b5-c69f-4141-be05-fd51c654ad35"
+    },
+    "id": {
+      "S": "b76ce9b5-c69f-4141-be05-fd51c654ad35"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **United Kingdom**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T15:07:33.774505083+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "c67565f1-df9c-47bf-81c5-ec62957307f9"
+    },
+    "SK": {
+      "S": "MESSAGE#c67565f1-df9c-47bf-81c5-ec62957307f9#d866ea3e-f350-4097-907d-e95484f118b9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "d866ea3e-f350-4097-907d-e95484f118b9"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:55:55.096068424+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#174011b1-8ad0-4766-8381-308cc6aef7a4"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "174011b1-8ad0-4766-8381-308cc6aef7a4"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:55:46.283653586+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#449d5787-c70f-4e84-8b58-aaa33dd76377"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "449d5787-c70f-4e84-8b58-aaa33dd76377"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:03:31.454578885+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#7131d5d1-c466-40e2-9341-88046b39a9db"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "7131d5d1-c466-40e2-9341-88046b39a9db"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:03:31.482255010+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#94681012-0e4a-4aa1-8760-42786e388e41"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "94681012-0e4a-4aa1-8760-42786e388e41"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:55:46.318219920+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#aa8c8285-dba3-46a7-b315-558eaa9b1ea9"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "aa8c8285-dba3-46a7-b315-558eaa9b1ea9"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:55:55.105812799+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#b2d37423-cd2a-412d-b55c-2ff2d7891df7"
+    },
+    "id": {
+      "S": "b2d37423-cd2a-412d-b55c-2ff2d7891df7"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Labour Exploitation** in **BR**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:55:46.297931670+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "d23e2c4f-222e-424a-92c5-f75577601838"
+    },
+    "SK": {
+      "S": "MESSAGE#d23e2c4f-222e-424a-92c5-f75577601838#f7171f07-e7e0-4b9e-8920-632f1ea7f599"
+    },
+    "id": {
+      "S": "f7171f07-e7e0-4b9e-8920-632f1ea7f599"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:53:04.084640761+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "SK": {
+      "S": "MESSAGE#e26b2794-7524-44c5-bacd-13579d93c819#08924463-f6fc-49ee-a589-4a792da5670e"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "08924463-f6fc-49ee-a589-4a792da5670e"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for UK labour exploitation"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:53:04.096210553+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "SK": {
+      "S": "MESSAGE#e26b2794-7524-44c5-bacd-13579d93c819#7b8f2f74-d708-4821-87fa-6876ee9a9894"
+    },
+    "id": {
+      "S": "7b8f2f74-d708-4821-87fa-6876ee9a9894"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **United Kingdom** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:52:57.855991217+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "e26b2794-7524-44c5-bacd-13579d93c819"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#e26b2794-7524-44c5-bacd-13579d93c819#e886e7c9-1ae6-4e29-b5bb-04fa623d3c83"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "e886e7c9-1ae6-4e29-b5bb-04fa623d3c83"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:13:08.216161763+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "SK": {
+      "S": "MESSAGE#e797ea0c-5413-4597-95de-ce8bbbce70c1#2610d44a-0b60-4715-bee3-d211c29a09dc"
+    },
+    "id": {
+      "S": "2610d44a-0b60-4715-bee3-d211c29a09dc"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:13:08.257679138+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "SK": {
+      "S": "MESSAGE#e797ea0c-5413-4597-95de-ce8bbbce70c1#73c48920-332b-4e8e-98e5-29964b872eaa"
+    },
+    "id": {
+      "S": "73c48920-332b-4e8e-98e5-29964b872eaa"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here are red flag indicators for Financial Institutions related to **Online Sexual Exploitation** in **Philippines**:\n\n**Account Behaviour Indicators**:\n- Third party making deposits into multiple accounts, sometimes in different names\n- Account holders sharing common address or contact details\n- Salary payments significantly below minimum wage for hours worked\n- Dormant accounts suddenly receiving multiple small payments\n\n**Transaction Patterns**:\n- Cash deposits followed by immediate international transfers\n- High-volume, low-value transactions inconsistent with stated business\n- Transactions to/from high-risk jurisdictions without clear business rationale\n- Round-number payments inconsistent with legitimate payroll\n\n**Customer Profile Indicators**:\n- Customers appearing coached when answering questions\n- Documentation inconsistencies (same employer address across multiple \"employees\")\n- Reluctance to provide information about employment or source of funds\n- Signs of control by third party during account opening\n\nThese indicators should be considered in combination, not isolation. Would you like more detail on any category?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:13:10.892301292+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#e797ea0c-5413-4597-95de-ce8bbbce70c1#ab9c4725-7ebc-4874-b9da-c412edbf5147"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "ab9c4725-7ebc-4874-b9da-c412edbf5147"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for Philippines"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:13:10.903164834+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#e797ea0c-5413-4597-95de-ce8bbbce70c1#b5295071-a7ec-4db3-8c0e-d58a36c9f25b"
+    },
+    "id": {
+      "S": "b5295071-a7ec-4db3-8c0e-d58a36c9f25b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **Philippines**:\n\n**Regional Focus**: Philippines\n**Sector**: Online Sexual Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:13:08.231891222+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "e797ea0c-5413-4597-95de-ce8bbbce70c1"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#e797ea0c-5413-4597-95de-ce8bbbce70c1#cb71f6f7-09ef-44a0-9fcc-6a8004ec9496"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "cb71f6f7-09ef-44a0-9fcc-6a8004ec9496"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Draft FI red flags for this typology (behaviour-based, non-exhaustive)"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:00:13.006947127+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "SK": {
+      "S": "MESSAGE#f8a5459a-9948-42cc-9927-3f9ffa01fa24#2eb2e361-d85a-4f56-98bc-0308bca10e14"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "2eb2e361-d85a-4f56-98bc-0308bca10e14"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:00:13.025056752+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "SK": {
+      "S": "MESSAGE#f8a5459a-9948-42cc-9927-3f9ffa01fa24#5d37d4fd-041f-4114-8137-4ea326328bfc"
+    },
+    "id": {
+      "S": "5d37d4fd-041f-4114-8137-4ea326328bfc"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for United Kingdom / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:00:13.713367502+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f8a5459a-9948-42cc-9927-3f9ffa01fa24"
+    },
+    "SK": {
+      "S": "MESSAGE#f8a5459a-9948-42cc-9927-3f9ffa01fa24#6bef5fbc-2e8c-4651-8479-c500710b7b87"
+    },
+    "id": {
+      "S": "6bef5fbc-2e8c-4651-8479-c500710b7b87"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I apologize, but I'm currently experiencing technical difficulties connecting to the intelligence analysis service. Please try again in a moment, or contact support if the issue persists."
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:42.133705460+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "SK": {
+      "S": "MESSAGE#f93dcfe6-4f1a-45e5-b9cf-0c3223c112af#3008ea9e-764e-4366-b403-d3111c192a7d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "3008ea9e-764e-4366-b403-d3111c192a7d"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I apologize, but I'm currently experiencing technical difficulties connecting to the intelligence analysis service. Please try again in a moment, or contact support if the issue persists."
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:42.114713210+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "SK": {
+      "S": "MESSAGE#f93dcfe6-4f1a-45e5-b9cf-0c3223c112af#5ae9ff8d-dba4-48de-9c2b-f7152495e4ae"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "5ae9ff8d-dba4-48de-9c2b-f7152495e4ae"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T08:55:42.128208960+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f93dcfe6-4f1a-45e5-b9cf-0c3223c112af"
+    },
+    "SK": {
+      "S": "MESSAGE#f93dcfe6-4f1a-45e5-b9cf-0c3223c112af#a21bad85-099c-4759-ba08-6d24418a11e4"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "a21bad85-099c-4759-ba08-6d24418a11e4"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-16T16:46:15.584959255+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "SK": {
+      "S": "MESSAGE#f9792707-1a63-4a50-b97c-bbd1dc309286#0f6d6ee5-f59d-4c3f-8267-7df16f22a633"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "0f6d6ee5-f59d-4c3f-8267-7df16f22a633"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-16T16:46:15.634803963+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "SK": {
+      "S": "MESSAGE#f9792707-1a63-4a50-b97c-bbd1dc309286#6e6b8d34-4644-45ad-bf5c-32cbca7e3e92"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "6e6b8d34-4644-45ad-bf5c-32cbca7e3e92"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-16T16:46:15.567475005+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "f9792707-1a63-4a50-b97c-bbd1dc309286"
+    },
+    "SK": {
+      "S": "MESSAGE#f9792707-1a63-4a50-b97c-bbd1dc309286#becd4965-41be-4043-8e6b-88063d137f2b"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "becd4965-41be-4043-8e6b-88063d137f2b"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T11:02:24.442482803+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#1bfca753-107f-4169-8d11-158535b98c55"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "1bfca753-107f-4169-8d11-158535b98c55"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Generate KJ report for BR / Labour Exploitation / last 12 months for Financial Institutions"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T11:02:55.256890054+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#417f7f96-3362-44e4-b487-8d5788b16d32"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "417f7f96-3362-44e4-b487-8d5788b16d32"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I'm your intelligence assistant for STOP THE TRAFFIK. I can help you with:\n\n**Current Context**: BR / Labour Exploitation\n\n**Report Generation**:\n- Generate Key Judgement (KJ) reports\n- Analyze OSINT sources\n- Create executive summaries\n\n**Trend Analysis**:\n- Identify trafficking patterns by region\n- Analyze exploitation types\n- Track emerging threats\n\n**Red Flag Indicators**:\n- Generate indicators for Financial Institutions\n- Behaviour-based detection patterns\n- Risk assessment frameworks\n\n**Education Materials**:\n- School lesson content\n- Social media campaigns\n- Infographics and posters\n\n**What would you like to explore?** You can ask me to:\n- \"Generate a KJ report\"\n- \"Analyze trends\"\n- \"Create red flag indicators for FIs\"\n- \"Create education materials about online safety\"\n\nHow can I help you today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:09:59.809494926+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#7e643327-6e66-4811-8926-7436cf1907ed"
+    },
+    "id": {
+      "S": "7e643327-6e66-4811-8926-7436cf1907ed"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for BR"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T11:02:24.462909470+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#87669fcf-f555-43ba-9d31-f11c66e07d43"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "87669fcf-f555-43ba-9d31-f11c66e07d43"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "I've analyzed intelligence sources for **BR** focusing on **Labour Exploitation**.\n\n**Sources Found**: 5 relevant sources from trusted organizations.\n\n**Key Sources**:\n- [UK Modern Slavery Report 2024](https://gov.uk/modern-slavery-report-2024) - UK Home Office\n- [Labour Exploitation in UK Agriculture](https://gla.gov.uk/labour-exploitation-2024) - GLAA\n- [Modern Slavery Trends in Britain](https://antislavery.org/uk-trends-2024) - Anti-Slavery International\n\n**Key Findings**:\n1. Trafficking patterns show increased online recruitment methods in 2024\n2. Cross-border movement patterns correlate with economic migration routes\n3. Financial indicators reveal common money laundering typologies\n\n**Next Steps**: I can generate a full Key Judgement report with:\n- Executive Summary\n- Demand Analysis\n- Financial Flow Analysis (Money)\n- Red Flag Indicators for Financial Institutions\n- Information Requirements\n\nWould you like me to proceed with the full report?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:09:59.826237259+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#89429029-85f5-4032-baa1-76c61c9ea135"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "id": {
+      "S": "89429029-85f5-4032-baa1-76c61c9ea135"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **BR**:\n\n**Regional Focus**: BR\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T10:09:59.796025801+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#8afeb4cb-5e57-4b2c-8190-82f4a9d7d259"
+    },
+    "id": {
+      "S": "8afeb4cb-5e57-4b2c-8190-82f4a9d7d259"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T11:02:55.249013304+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "user"
+    },
+    "conversationId": {
+      "S": "fb02e69d-be6b-46aa-8aa4-4e854fea2885"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb02e69d-be6b-46aa-8aa4-4e854fea2885#eecd5486-e44d-447e-b191-25431294f31d"
+    },
+    "id": {
+      "S": "eecd5486-e44d-447e-b191-25431294f31d"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Identify information gaps and turn them into Information Requirements"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:31:58.788162551+00:00"
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "conversationId": {
+      "S": "fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "SK": {
+      "S": "MESSAGE#fb4f8951-bd38-493a-b688-43908833a6ab#41223056-f5c3-4c16-af0d-e972a4ce3237"
+    },
+    "id": {
+      "S": "41223056-f5c3-4c16-af0d-e972a4ce3237"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Hello! I'm your intelligence assistant. I can help you generate Key Judgement reports, find trends, and analyze trafficking patterns. What would you like to explore today?"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:31:58.802093301+00:00"
+    },
+    "role": {
+      "S": "user"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "conversationId": {
+      "S": "fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb4f8951-bd38-493a-b688-43908833a6ab#4b1241ea-ddf7-41cc-9140-5f57bff5582a"
+    },
+    "id": {
+      "S": "4b1241ea-ddf7-41cc-9140-5f57bff5582a"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "List top recruitment patterns + evidence + confidence for United Kingdom"
+    }
+  },
+  {
+    "createdAt": {
+      "S": "2026-01-15T09:31:58.814005801+00:00"
+    },
+    "citations": {
+      "NULL": true
+    },
+    "role": {
+      "S": "assistant"
+    },
+    "conversationId": {
+      "S": "fb4f8951-bd38-493a-b688-43908833a6ab"
+    },
+    "entityType": {
+      "S": "Message"
+    },
+    "SK": {
+      "S": "MESSAGE#fb4f8951-bd38-493a-b688-43908833a6ab#51b80b47-c0d8-4b67-9b5d-3a209231eafc"
+    },
+    "id": {
+      "S": "51b80b47-c0d8-4b67-9b5d-3a209231eafc"
+    },
+    "PK": {
+      "S": "ORG#stt"
+    },
+    "toolCalls": {
+      "NULL": true
+    },
+    "content": {
+      "S": "Here's my analysis of trafficking trends for **United Kingdom**:\n\n**Regional Focus**: United Kingdom\n**Sector**: Labour Exploitation\n\n**Key Patterns Identified**:\n1. **Recruitment Methods**: 67% of cases involve online recruitment via social media platforms\n2. **Victim Demographics**: Primary age group 18-25, with increasing numbers of males in labour exploitation\n3. **Financial Indicators**: Multiple small cash deposits, rapid fund movement through multiple accounts\n\n**Emerging Threats**:\n- Cryptocurrency used in 12% of tracked financial flows\n- Recruitment through legitimate job posting sites increasing\n- \"Debt bondage\" disguised as employment contracts\n\n**Recommendations**:\n- Focus awareness campaigns on digital literacy\n- Strengthen cross-border cooperation\n- Increase monitoring of high-risk sectors\n\nWould you like me to dive deeper into any specific aspect?"
+    }
+  }
+]

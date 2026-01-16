@@ -109,6 +109,7 @@ services:
     volumes:
       - localstack_data:/var/lib/localstack
       - ./scripts/localstack-init.sh:/etc/localstack/init/ready.d/init.sh:ro
+      - ./scripts/seed-data:/seed-data:ro
     networks:
       - treven-network
 
